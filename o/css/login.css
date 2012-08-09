@@ -1,0 +1,695 @@
+body {
+    font: 12px/1.5 Tahoma,Helvetica,Arial,'ËÎÌו',sans-serif;
+}
+html, legend {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #404040;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+fieldset, img {
+    border: medium none;
+}
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+    font-weight: normal;
+}
+li {
+    list-style: none outside none;
+}
+caption, th {
+    text-align: left;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+h1 {
+    font-size: 18px;
+}
+h2 {
+    font-size: 16px;
+}
+h3 {
+    font-size: 14px;
+}
+q:before, q:after {
+    content: "";
+}
+abbr, acronym {
+    border: medium none;
+    font-variant: normal;
+}
+sup {
+    vertical-align: text-top;
+}
+sub {
+    vertical-align: text-bottom;
+}
+input, button, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+input, button, textarea, select {
+}
+select, input, button, textarea {
+    font: 100% Tahoma,Helvetica,Arial,sans-serif;
+}
+table {
+    font-size: inherit;
+}
+a {
+    color: #3366CC;
+    text-decoration: none;
+}
+a:hover {
+    color: #FF6600;
+    text-decoration: underline;
+}
+.long-btn {
+    background: url("/sys/common/img/btn_bg.png") no-repeat scroll 0 -300px transparent;
+    border: medium none;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    width: 100px;
+}
+a.long-btn:hover {
+    color: #FFFFFF;
+}
+.clearfix:after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+}
+.clearfix {
+}
+.login-box .msg p.error, .login-box .submit button, .login-box .mobile-num, .login-box .entries li, .install-plugin-popup .hd, .install-plugin-popup h3, .install-plugin-popup .bd ul li, .install-plugin-popup .bd strong, .long-login-help, .login-box ul.entries {
+    background: url("../img/stuff.png") no-repeat scroll 1000px 1000px transparent;
+}
+html, body {
+    background-color: #FAFAFA;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.login-box {
+    margin: 0 auto;
+    overflow: hidden;
+}
+.login-tab li, .login-tab li a, .login-tab li h2, .login-tab li span {
+    background: url("../img/login_tab_new.png") repeat scroll 0 0 transparent;
+}
+.login-tab {
+    border-bottom: 1px solid #CCCCCC;
+    font-size: 0;
+    height: 36px;
+    text-align: center;
+}
+.login-tab li {
+    background-position: 0 0;
+    display: inline-block;
+    font-size: 12px;
+    height: 36px;
+    line-height: 36px;
+    margin-bottom: -1px;
+    margin-top: 1px;
+    padding-left: 10px;
+    position: relative;
+    text-align: center;
+}
+.login-tab li a, .login-tab li.current h2 {
+    float: left;
+    height: 100%;
+    padding: 0 40px 0 32px;
+}
+.login-tab li a {
+    background-position: right -37px;
+    background-repeat: no-repeat;
+    color: #404040;
+    width: 80px;
+}
+.login-tab li.current {
+    background-position: 0 -75px;
+    margin-bottom: -1px;
+    position: relative;
+}
+.login-tab li.current h2 {
+    background-position: right -114px;
+    background-repeat: no-repeat;
+    font-size: 12px;
+    width: 81px;
+}
+.login-box .msg p.error {
+    background-color: #FFF2F2;
+    background-position: -319px -449px;
+    border-color: #FF8080;
+    line-height: 18px;
+    padding: 2px 10px 2px 23px;
+}
+.login-box .msg p {
+    border: 1px solid #CCCCCC;
+    float: none;
+    white-space: normal;
+    word-wrap: break-word;
+}
+.login-box .hd {
+    overflow: hidden;
+}
+.login-box .bd {
+    padding: 10px 0 5px;
+}
+.login-box .field {
+    padding-top: 5px;
+    vertical-align: middle;
+}
+.login-box .img-code-field {
+    padding-top: 2px;
+}
+.login-box .field label {
+    display: inline-block;
+    padding-right: 5px;
+    text-align: right;
+    width: 70px;
+}
+.login-box .field-tips {
+    margin-left: 92px;
+}
+.login-box .field-tips .msg {
+    margin-left: 0;
+    width: 300px;
+}
+.login-box .field-nolabel {
+    margin-left: 92px;
+}
+.login-box .login-text {
+    border: 1px solid #C8C8C8;
+    height: 18px;
+    line-height: 18px;
+    margin-right: 3px;
+    padding: 3px;
+    vertical-align: middle;
+    width: 180px;
+}
+* + html .login-box .login-text {
+    margin-left: -2px;
+}
+.login-box .field .highlight {
+    border: 1px solid #FF6633;
+}
+.login-box input.tb-input-hint {
+    color: silver;
+}
+.login-box .forget-pw {
+    color: #808080;
+    line-height: 26px;
+    vertical-align: middle;
+}
+.login-box .mobile-num {
+    background-color: #FFFFFF;
+    background-position: 164px -164px;
+    width: 174px;
+}
+.login-box .checkcode {
+    ime-mode: disabled;
+    margin: 0;
+    width: 40px;
+}
+.login-box .audio_code {
+    display: inline-block;
+    height: 16px;
+    vertical-align: middle;
+    width: 16px;
+}
+.login-box .login-msg {
+    margin: 0 20px;
+}
+.login-box .login-msg p {
+    float: none;
+    white-space: normal;
+    word-wrap: break-word;
+}
+.login-box .password-edit {
+    display: inline-block;
+    height: 28px;
+    margin-left: -1px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+#J_StandardPwd {
+    display: inline-block;
+    height: 28px;
+    vertical-align: middle;
+}
+.login-box .password-edit-tmp {
+    display: block;
+    height: 0;
+    overflow: hidden;
+    width: 0;
+}
+.login-box .submit {
+    overflow: hidden;
+    padding: 20px 0 0 92px;
+}
+.login-box .submit button {
+    background-position: 0 -100px;
+    border: 0 none;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0;
+    height: 27px;
+    line-height: 100px;
+    margin-right: 6px;
+    overflow: hidden;
+    text-indent: -9999px;
+    vertical-align: middle;
+    width: 86px;
+}
+.login-box .submit button:hover, .login-box .submit button.hover {
+    background-position: -128px -100px;
+}
+.login-box .submit-loading {
+    background: url("../img/loading.gif") no-repeat scroll 60px 13px transparent;
+}
+.login-box .submit-loading button {
+    background-position: -253px -100px;
+}
+.login-box .safe {
+    height: 56px;
+    padding: 0 0 0 80px;
+}
+.login-box .safe input {
+    margin-right: 3px;
+    vertical-align: middle;
+}
+.login-box .safe label {
+    color: #AAAAAA;
+    vertical-align: middle;
+}
+.login-box .msg p.dynamic {
+    background: url("../img/sending.gif") no-repeat scroll 8px 4px #FFFFE5;
+    border: 1px solid #FFCC7F;
+    color: #404040;
+    line-height: 18px;
+    padding: 2px 10px 2px 30px;
+}
+.login-box ul.entries {
+    background-position: 0 -258px;
+    height: 18px;
+    margin: 8px 0 0;
+    padding: 8px 0 0 80px;
+}
+.login-box ul.entries li {
+    background-position: -337px -224px;
+    float: left;
+    padding: 0 10px;
+}
+.login-box ul.entries .dynamic-pwd, .login-box ul.entries .static-pwd {
+    padding-left: 23px;
+}
+.login-box ul.entries .dynamic-pwd {
+    background-position: -321px -196px;
+}
+.login-box ul.entries .static-pwd {
+    background-position: -321px -165px;
+}
+.login-box ul.entries a {
+    color: #808080;
+}
+.login-box ul.entries a:hover {
+    color: #FF6600;
+}
+.login-box .code-tip {
+    display: block;
+    padding: 5px 0 2px 92px;
+}
+.login-box .check-code-img {
+    border: medium none;
+    height: 30px;
+    margin: 0;
+    vertical-align: middle;
+    width: 100px;
+}
+.login-box .change-code {
+    display: inline-block;
+    line-height: 14px;
+    margin: 0;
+    vertical-align: middle;
+}
+.login-box .field .warning-tip {
+    color: #FF0A0A;
+    display: block;
+    font-weight: 400;
+    padding: 0 0 0 92px;
+}
+.login-box .install-plugin-img img {
+    vertical-align: middle;
+}
+.install-plugin-popup {
+    background: none repeat scroll 0 0 #EFEFEF;
+    border: 1px solid #BCBCBC;
+    left: 50%;
+    margin-left: -160px;
+    padding: 4px;
+    position: absolute;
+    top: 20px;
+    width: 308px;
+    z-index: 100003;
+}
+.install-plugin-popup .wrap {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+.install-plugin-popup .hd {
+    background-position: 0 0;
+    height: 32px;
+    padding-left: 10px;
+}
+.install-plugin-popup h3 {
+    background-position: 100% 0;
+    color: #FFFFFF;
+    font-size: 14px;
+    height: 32px;
+    line-height: 32px;
+}
+.install-plugin-popup .close {
+    cursor: pointer;
+    height: 15px;
+    line-height: 100px;
+    overflow: hidden;
+    position: absolute;
+    right: 14px;
+    top: 12px;
+    width: 15px;
+}
+.install-plugin-popup .bd {
+    padding: 10px;
+}
+.install-plugin-popup .bd h4 {
+    font-size: 12px;
+    font-weight: bold;
+}
+.install-plugin-popup .bd ul {
+    color: #636363;
+    margin: 5px 0 8px;
+}
+.install-plugin-popup .bd ul li {
+    background-position: 0 -40px;
+    line-height: 20px;
+    padding-left: 8px;
+}
+.install-plugin-popup .bd strong {
+    background-position: -326px -62px;
+    color: #FF6600;
+    display: block;
+    font-size: 12px;
+    padding-left: 15px;
+}
+.install-plugin-popup .bd .buttons {
+    margin: 12px 0 2px;
+    text-align: center;
+}
+.install-plugin-popup a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+.popup-mask {
+    background: none repeat scroll 0 0 #000000;
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100002;
+}
+* html .popup-shim {
+    border: 0 none;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100001;
+}
+.long-login-hover {
+    background: url("../img/longlogin.png") no-repeat scroll 0 0 transparent;
+}
+.long-login-help {
+    background-position: -325px -367px;
+    display: inline-block;
+    font-size: 0;
+    height: 12px;
+    overflow: hidden;
+    text-indent: -1000px;
+    vertical-align: middle;
+    width: 12px;
+}
+.long-login {
+    color: #999999;
+    display: inline-block;
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+    padding: 2px 0 2px 3px;
+    position: relative;
+    vertical-align: middle;
+    z-index: 5;
+}
+.long-login-hover, .safe-login-hover {
+    background-position: 0 4px;
+}
+.login-tips {
+    background-color: #FFFFFF;
+    background-position: 0 -26px;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px 4px 4px 4px;
+    clear: both;
+    color: #CA3E12;
+    display: none;
+    height: 28px;
+    line-height: 14px;
+    margin-top: -1px;
+    overflow: visible;
+    padding: 0 5px;
+    position: relative;
+    width: 195px;
+    word-wrap: break-word;
+}
+.login-tips .login-tips-content {
+    padding: 0 3px;
+}
+.long-login input.J_LognLoginInput {
+    margin-right: 6px;
+}
+.login-tips s {
+    background-color: #FAFAFA;
+    height: 1px;
+    position: absolute;
+    width: 1px;
+}
+.login-tips .tl {
+    left: -1px;
+    top: -1px;
+}
+.login-tips .tr {
+    right: -1px;
+    top: -1px;
+}
+.login-tips .bl {
+    bottom: -1px;
+    left: -1px;
+}
+.login-tips .br {
+    bottom: -1px;
+    right: -1px;
+}
+.login-box .safe input {
+    margin-right: 6px;
+}
+.submit .long-login {
+    display: block;
+    height: 22px;
+    line-height: 22px;
+    margin-left: 80px;
+    margin-top: 4px;
+    padding: 2px 0 0 3px;
+    width: 120px;
+}
+.submit .long-login input {
+    padding: 0;
+}
+.submit .login-tips {
+    margin-top: -1px;
+    position: relative;
+    z-index: 1;
+}
+.submit .long-login-hover {
+    background-position: 0 0;
+}
+.login-box .hd p {
+    color: #808080;
+    padding: 10px 0 0 40px;
+}
+.login-box strong {
+    font-weight: 700;
+}
+.dynamic-tips {
+    margin: 12px 0 8px 15px;
+    width: 276px;
+}
+.dynamic-tips .rc-tp, .dynamic-tips .rc-bt {
+    display: block;
+    height: 1px;
+    overflow: hidden;
+}
+.dynamic-tips .rc-tp s, .dynamic-tips .rc-bt s {
+    background-color: #FAFAFA;
+    display: block;
+    height: 1px;
+    width: 1px;
+}
+.dynamic-tips .rc-tp .r, .dynamic-tips .rc-bt .r {
+    float: right;
+}
+.dynamic-tips .rc-tp .l, .dynamic-tips .rc-bt .l {
+    float: left;
+}
+.dynamic, .dynamic-tips, .dynamic-tips .tips {
+    overflow: hidden;
+}
+.dynamic-tips .tips {
+    background-color: #FFFFFF;
+    border: 1px solid #ECECEC;
+    color: #808080;
+    margin: -1px 0;
+    padding: 6px 10px;
+}
+.dynamic-tips em {
+    color: #FF6600;
+}
+.dynamic-tips .left-text {
+    float: left;
+    padding-top: 5px;
+    width: 82px;
+}
+.dynamic-tips .right-text {
+    float: left;
+    line-height: 16px;
+    padding-left: 10px;
+    width: 158px;
+}
+.dynamic-tips .right-text em {
+    padding-left: 6px;
+}
+.login-box .dynamic .login-text {
+    margin-right: 3px;
+    width: 80px;
+}
+.login-box .dynamic .mobile-num {
+    width: 174px;
+}
+.login-box .dynamic .submit {
+    margin-top: -34px;
+    padding-left: 186px;
+}
+.login-box .dynamic .submit-loading {
+    background: url("../img/loading.gif") no-repeat scroll 282px 18px transparent;
+}
+.login-box .dynamic ul.entries {
+    padding-left: 84px;
+}
+.login-box .dynamic .field input {
+    position: relative;
+}
+.login-box .mobile-check {
+    width: 80px;
+}
+.login-box .field .select-wrap {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #C8C8C8;
+    display: inline-block;
+    height: 24px;
+    position: relative;
+    vertical-align: middle;
+    width: 180px;
+}
+.login-box .field select {
+    border: 0 none;
+    height: 20px;
+    left: 2px;
+    line-height: 20px;
+    outline: medium none;
+    position: absolute;
+    top: 2px;
+    width: 176px;
+}
+.ph-label {
+    -moz-transition: all 0.2s ease-out 0s;
+    color: #999999;
+    height: 24px;
+    line-height: 24px;
+    opacity: 1;
+    padding: 0 0 0 6px;
+    position: absolute;
+}
+.ph-hide .ph-label {
+    opacity: 0;
+    visibility: hidden;
+}
+.ph-focus .ph-label {
+    color: #DDDDDD;
+}
+.module-dynamic .static, .module-dynamic .quick-login, .module-static .quick-login, .module-static .dynamic, .module-quick .static, .module-quick .dynamic {
+    display: none;
+}
+.no-longlogin .long-login, .no-longlogin .long-login-help, .no-longlogin .login-tips {
+    visibility: hidden;
+}
+.no-safe .safe-login {
+    visibility: hidden;
+}
+.no-reg .register {
+    visibility: hidden;
+}
+.no-dynamic .entries .register {
+    background: none repeat scroll 0 0 transparent;
+}
+.no-dynamic .dynamic-pwd {
+    display: none;
+}
+.hidden {
+    display: none;
+}
+.ql-box {
+    padding: 10px 0 0;
+}
+.ql-single .r-user {
+    display: none;
+}
+.ql-box .userlist .current {
+    font-weight: bold;
+}
+.ql-box .userlist li {
+    height: 2em;
+}
+.ql-box .title {
+    padding-left: 80px;
+}
+.ql-box .userlist {
+    height: 6em;
+    margin: 10px 0 0;
+    overflow: auto;
+    padding: 0 0 0 80px;
+}
