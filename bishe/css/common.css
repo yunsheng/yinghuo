@@ -1,0 +1,142 @@
+/**===========================================
+ * 	header====================================
+ ============================================*/
+a,a:link{
+	text-decoration: none;
+}
+#header{
+	position:fixed;
+	width:100%;
+	background:rgba(211,219,241,0.6);
+	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#E5E9F7,endcolorstr=#E5E9F7,gradientType=1);
+    overflow: auto;
+    padding: 10px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    z-index: 99;
+}
+#header a{
+	color: #000;	
+}
+#header .name{
+	float:left;
+	display:inline;
+	width:7em;
+	font-family: 'Pacifico';
+    font-size: 1.1em;
+    margin-right: 1em;
+    position: relative;
+    top: 3px;
+    text-decoration: none;
+}
+#header .name a{
+	cursor: pointer;
+}
+#header .exit{
+	border: 0;
+	margin: 0;
+	padding: 0;
+	outline: none;
+	background: none;
+	cursor: pointer;
+	color: #666;
+}
+#header  .more{
+	float:left;
+	display:inline;
+	cursor: pointer;
+	width:12em;
+	border-bottom: 1px dashed #CCCCCC;
+    font-size: 0.8em;
+    
+}
+#header .more:after{
+	content: " →";
+}
+#header .weibo{
+	float: right;
+	display:inline;
+	width:10em;
+	font-style:italic;
+	margin-right:1em;
+	text-align: right;
+    
+    
+}
+#header .weiboname{
+	border-radius: 3px 3px 3px 3px;
+    font-size: 0.8em;
+    padding: 0.4em 0.6em;
+    position: relative;
+    top: -2px;
+    color: red;
+}
+/**=========================================
+ * nav======================================
+============================================*/
+#nav{
+	padding: 60px 0 0px 0;
+	width:940px;
+	margin: 0 auto 20px auto;
+	border-bottom: 2px solid #6CA044;
+	position: relative;
+}
+
+#nav a{
+	position:relative;
+	margin-right:20px;
+	display: inline-block;
+	border-bottom: 2px solid #6CA044;
+	bottom: -2px;
+	padding: 2px 6px;
+	
+}
+#nav .selected{
+	color:red;
+	padding:2px 4px;
+	border: 2px solid #6CA044;
+	border-bottom: 2px solid #fff;
+}
+/**=========================================
+ * 	content=================================
+============================================*/
+#content{
+	min-height: 200px;
+}
+.select-con{
+	width:940px;
+	margin:0 auto;
+}
+.caption{
+	line-height: 32px;
+	text-align: center;
+}
+
+/**=========================================
+ * 	footer==================================
+============================================*/
+#footer{
+	position:fixed;
+	bottom:0px;
+	width: 100%;
+	text-align: center;
+	z-index: 99;
+	background:rgba(211,219,241,0.6);
+	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#E5E9F7,endcolorstr=#E5E9F7,gradientType=1);
+    overflow: auto;
+    padding: 10px;
+    margin-top: 30px;
+
+}
+#footer .copyright{
+	line-height: 36px;
+}
+/**=========================================
+ * 	层级修复==================================
+============================================*/
+.ks-cal-call{
+	z-index: 10003;
+}
+.J_AreaSelect select{
+	margin:10px 0 0 2px;
+}

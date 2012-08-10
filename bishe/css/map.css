@@ -1,0 +1,33 @@
+#map{
+	width:940px;
+	height: 500px;
+	margin: 0 auto;
+}
+
+/*
+ * infoWin
+ */
+.infoWin{
+	padding-bottom: 2em;
+}
+.J_InfoNext, .J_InfoPrev,.infoWin .last,.infoWin .first{
+	position: absolute;
+	bottom: 0px;	
+	cursor:pointer;
+}
+.J_InfoPrev,.infoWin .first{
+	left: 10px;
+}
+.J_InfoNext,.infoWin .last{
+	right: 10px;
+	text-align: right;
+}
+
+.infoWin .last,.infoWin .first{
+	color:#ccc;
+	cursor: default;
+	
+}
+.infoWin .address{
+	margin-right:2em;
+}

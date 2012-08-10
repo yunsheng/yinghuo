@@ -1,0 +1,32 @@
+.affirm-win {
+    background-color: #EEFFE2;
+    border: 1px solid #ABD792;
+    border-radius: 2px 2px 2px 2px;
+    overflow: hidden;
+    padding: 30px 40px;
+    width: 628px;
+    margin:40px auto;
+}
+.affirm-win .bd .moneysTip {
+    background: url("http://yinghuo.com/q/formvalid.png") no-repeat scroll 0 -371px transparent;
+    color: #333333;
+    font-size: 16px;
+    font-weight: bolder;
+    height: 36px;
+    line-height: 36px;
+    padding-left: 44px;
+}
+.affirm-win .bd .other-info {
+    color: #666666;
+    font-size: 12px;
+    line-height: 22px;
+    padding-left: 44px;
+    text-align: left;
+    width: 100%;
+}
+.affirm-win .bd .other-info .blue {
+    color: #057BD2;
+}
+.orange {
+    color: #FF7011;
+}

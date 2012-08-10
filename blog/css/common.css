@@ -1,0 +1,184 @@
+/**===========================================
+ * 整体布局===================================
+ ============================================*/
+body{
+		background: #2F2F2F;
+}
+a,a:link{
+	text-decoration: none;
+}
+#nav,#content,#footer{
+		width:960px;
+}
+#header{
+	 background: none repeat scroll 0 0 #222222;
+    overflow: auto;
+    padding: 10px;
+    margin-bottom: 30px;
+    font-size: 16px;
+     
+}
+#header .exit{
+	border: 0;
+	margin: 0;
+	padding: 0;
+	outline: none;
+	background: none;
+	cursor: pointer;
+	color: #666;
+}
+#header a{
+	color: #CCCCCC;	
+	cursor: pointer;
+}
+#header .name{
+	font-family: 'Pacifico';
+    font-size: 1.1em;
+    margin-right: 1em;
+    float:left;
+    width:10em;
+    position: relative;
+    top: 3px;
+    color:#fff;
+    text-decoration: none;
+}
+
+#header  .more{
+	border-bottom: 1px dashed #CCCCCC;
+    font-size: 0.8em;
+}
+#header .more:after{
+	content: "--->";
+}
+#header .weibo{
+	 float: right;
+     margin-right: 1em;
+     width:10em;
+    text-align: right;
+}
+#header .weiboname{
+	 border-radius: 3px 3px 3px 3px;
+    font-size: 0.8em;
+    padding: 0.4em 0.6em;
+    position: relative;
+    top: -2px;
+}
+#content{
+	margin:0 auto;
+	margin-top: 10px;
+    background:rgba(0, 0, 0, 0.3);
+    border-radius: 3px 3px 3px 3px;
+    padding: 20px;
+    position: relative;
+}
+
+#footer{
+	margin:10px auto;
+	text-align:center;
+	color:#fdff06;
+	padding: 10px 0;
+}
+
+
+/**======================================
+ * 	导航==================================
+ ========================================*/
+#nav{
+	height: 20px;
+	line-height:20px;
+	margin: 0 auto;
+	font-family: "微软雅黑";
+	position: relative;
+	top: -20px;
+	margin-bottom: -20px;
+	}
+#nav .s-opacity{
+	background:orange;
+	opacity: .2;
+	border-radius: 3px 3px 0 0;
+}
+
+
+#nav a{
+	color: #ccc;
+	font-size: 16px;
+	margin-left: 10px;
+	background-image: -moz-linear-gradient(center top , #444444, #333333);
+	background:-webkit-gradient(linear,0 50%,100% 50%,from(#444),to(#333));/*Old gradient for webkit*/ 
+	background:-webkit-linear-gradient(top,#444,#333);/*new gradient for Webkit*/ 
+	background:-o-linear-gradient(top,#444,#333); /*Opera11*/
+	background: -moz-linear-gradient(#444, #333);/*Mozilla*/ 
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#444444, endColorstr=#333333);/*IE<9>*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#444444, endColorstr=#333333)";/*IE8+*/
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
+    display: block;
+    padding: 0.5em;
+    position: absolute;
+	bottom:-10px;
+	width: 6em;
+	padding:5px;
+	text-align: center;
+}
+#nav .fav{
+	left: 100px;
+}
+#nav .web{
+	left: 220px;
+}
+#nav .des{
+	left: 340px;
+}
+#nav .time{
+	left: 460px;
+}
+#nav .actived{
+	color:#fdff06;
+}
+
+#nav a:hover{
+	color:#fdff06;
+}
+/**==============================================
+ * 	按钮=========================================
+ ==============================================*/
+
+.button{
+	background: rgba(0, 0, 0, 0.3);
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset, 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #FFFFFF;
+    font-family: 'AllerLight',Helvetica,Arial,sans-serif;
+    color: #fff;
+    margin-left: 1em;
+    padding:.6em 1.2em;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    cursor: pointer;
+}
+.button:hover{
+	background:-webkit-gradient(linear,0 50%,100% 50%,from(#FF9900),to(#FF6600));/*Old gradient for webkit*/ 
+	background:-webkit-linear-gradient(top,#F90,#F60);/*new gradient for Webkit*/ 
+	background:-o-linear-gradient(top,#F90,#F60); /*Opera11*/
+	background: -moz-linear-gradient(#FF9900, #FF6600);/*Mozilla*/ 
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ff9900, endColorstr=#ff6600);/*IE<9>*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#ff9900, endColorstr=#ff6600)";/*IE8+*/
+}
+
+
+/**====================================================
+ * 响应式设计==========================================
+ =====================================================*/
+
+@media only screen and (min-width : 480px) and (max-width : 959px) {
+	#nav,#content,#footer{
+		width: 96%;
+	}
+}
+ @media only screen and (max-width : 479px){
+ 	#nav,#content,#footer{
+		width: 96%;
+	}
+ }

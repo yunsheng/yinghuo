@@ -1,0 +1,22 @@
+@charset "gb18030";
+/* CSS Document */
+html {-webkit-text-size-adjust:none;/*Chrome*/}
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td, label {margin:0;padding:0;}
+body, button, select, textarea {font:12px/1.5 tahoma,arial,'\5b8b\4f53',sans-serif;}
+h1, h2, h3, h4, h5, h6 {font-size:100%;}
+address, cite, dfn, em, var {font-style:normal;}
+code, kbd, pre, samp {font-family:courier, monospace;}
+small {font-size:12px;}
+ul, ol {list-style-type:none;list-style-position:outside;}
+a {text-decoration:none;}
+a:hover {text-decoration:underline;}
+sup {vertical-align:text-top;}
+sub {vertical-align:text-bottom;}
+legend {color:#000;}
+fieldset, img {border:0;}
+button, input, select, textarea {font-size:100%;resize:none;}
+table {border-collapse:collapse;border-spacing:0;}
+.clearfix:after {content:"";height:0;display:block;visibility:hidden;clear:both;}
+.clearfix {*zoom:1;}
+.clearfixup {clear:both;}
+.hidden {display:none;}
