@@ -4,17 +4,17 @@
 
 var DZ_ARTICLE_TYPE =[{
         "value": 0,
-        "name": "养生保健"
+        "name": "鍏荤敓淇濆仴"
     },
     {
         "value": 1,
-        "name": "网事悠游"
+        "name": "缃戜簨鎮犳父"
     },
     {
         "value": 2,
-        "name": "信手撷珍"
+        "name": "淇℃墜鎾风弽"
     },
     {
         "value": 3,
-        "name": "流水淙淙"
+        "name": "娴佹按娣欐窓"
 }];

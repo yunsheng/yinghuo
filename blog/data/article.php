@@ -8,11 +8,11 @@
 		require_once("/yinghuo/o/common.php");
 		require_once("../sql/article.php");
 	   $type=$_POST['type'];
-	   $title=decodeUriCompent($_POST["title"]);
-	   $intro=decodeUriCompent($_POST["intro"]);
+	   $title=urldecode($_POST["title"]);
+	   $intro=urldecode($_POST["intro"]);
 	   $id=$_POST['id'];
 	   $menuid=$_POST['menuid'];
-	   $paragram=decodeUriCompent($_POST["paragram"]);
+	   $paragram=urldecode($_POST["paragram"]);
 	   /**
 	    * @name addItem 
 	    * @param $titles

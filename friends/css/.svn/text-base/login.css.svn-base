@@ -1,0 +1,158 @@
+body {
+    font: 12px/1.5 'arial','Tahoma','simsun';
+}
+.login_body
+{
+    background-color:#ededed;
+}
+.login_left
+{
+    width:500px;
+    float:left;
+    padding:24px 0 0 190px;
+}
+.login_pic
+{
+    margin-top:20px;
+}
+.input_infor
+{
+    float:left;
+    display:inline;
+    width:395px;
+    height:233px;
+    background:url("../images/image/login_frame.jpg") no-repeat;
+    margin-top:100px;
+    padding:30px 0 0 80px;
+	
+}
+.input_infor a,.input_infor a:hover
+
+{
+	color:black;
+}
+.input_infor li
+{
+    padding:5px 0;
+    line-height:24px;
+}
+.input_infor li input
+{
+    height:24px;
+    line-height:24px;
+    width:200px;
+}
+.username, .pwd, .verification
+{
+	float: left;
+	display:inline;
+	width: 60px;
+	text-align: left;
+}
+.input_infor .verification_pic
+{
+    padding-left:50px;
+}
+.btn_login,.prompt
+{
+    margin-left:50px;
+}
+.btn_login
+{
+    padding:2px;
+}
+
+
+/*******register********/
+.register_container
+{
+	width: 960px;
+	margin: 0 auto;
+	height: 250px;
+	border: 1px solid #c9c9c9;
+	padding: 50px 0;
+}
+.register_container .sub{
+	margin-left: 267px;
+}
+.ks-tdform{
+	width: 480px;
+	margin: 40px auto;
+}
+.ks-tdform .input-content{
+	height:36px;
+	margin-bottom:10px;
+}
+.ks-tdform .input-label{
+	line-height:36px;
+	float: left;
+	display: inline;
+	width: 100px;
+	text-align: right;
+}
+
+.ks-tdform .input-wrap{
+	padding:3px;
+	float:left;
+}
+.ks-tdform .error .input-wrap{
+	background:#ffdac2;
+}
+.ks-tdform .right .input-wrap{
+   background:#bfea8e;
+}
+
+
+.ks-tdform .input-border{
+	display: inline-block;
+	border:1px solid #fff;
+}
+.ks-tdform .focus .input-border{
+	border:none;
+}
+.ks-tdform .error .input-border{
+	border:1px solid #ffdac2;
+}
+.ks-tdform .right .input-border{
+	border:1px solid  #BFEA8E;
+}
+
+.ks-tdform .input-text{
+	height:24px;
+	line-height:24px;
+	width:200px;
+	border:1px solid #e5e5e5;
+	vertical-align:middle;
+}
+.ks-tdform .default .input-text{
+	color: #999;
+}
+.ks-tdform .focus .input-text{
+	border:2px solid #8AAADE;
+}
+.ks-tdform .right .input-text{
+	border:1px solid #5ea00e;
+}
+.ks-tdform .error .input-text{
+	border:1px solid #ee7b2f;
+}
+
+.ks-tdform .input-tip{
+	display:inline-block;
+	margin:9px 0px 0px 5px;
+}
+.ks-tdform .error .input-tip,.ks-tdform .right .input-tip{
+	background-image:url("http://yinghuo.com/q/formvalid.png");
+	color:#FF6600;
+	background-position:0 -1674px;
+	padding-left:23px;
+}
+.ks-tdform .right .input-tip{
+	background-position:0 -1643px;
+	color:#5EA00E;
+}
+.ks-tdform .input-select{
+	margin-top:10px;
+}
+
+

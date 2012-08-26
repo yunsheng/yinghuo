@@ -51,7 +51,7 @@ KISSY.add("planhandle",function(S){
 							'</div>'+
 							'<span class="input-tip"></span>'+
 						'</div>'+
-						'<input type="button" class="{{button}} sub button" style="margin-left:245px" value="提交" />'+
+						'<input type="submit" class="{{button}} sub button" style="margin-left:245px" value="提交" />'+
 					'</form>';
 
 		},
@@ -82,8 +82,11 @@ KISSY.add("planhandle",function(S){
 			height:320,
 			content:winContent
 		});
+		self.editWin.on("show",function(e){
+			self.valid("",onsuccess,o);
+		});
 		self.editWin.show();
-		self.valid("",onsuccess,o);
+		
 	},
 	/**
 	 * 编辑计划
@@ -110,8 +113,10 @@ KISSY.add("planhandle",function(S){
 			height:320,
 			content:winContent
 		});
+		self.editWin.on("show",function(e){
+			self.valid(id,onsuccess,o);
+		});
 		self.editWin.show();
-		self.valid(id,onsuccess,o);
 	},
 	/**
 	 * 删除计划
@@ -165,7 +170,10 @@ KISSY.add("planhandle",function(S){
 		 		},{
 		 			node:".J_End",
 		 			allowNull:true
-		 		}]
+		 		}],
+		 		submit:function(e){
+		 			
+		 		}
 		 }),
 		startCalendar=self.calendar('#start'),
 		nStart=S.one(".J_Start"),
@@ -199,25 +207,20 @@ KISSY.add("planhandle",function(S){
 				S.Win.warn(mes,"添加失败");
 			};
 		};
-		nEditSubBtn&&nEditSubBtn.on("click",function(e){
-			if(formvalid.valid()){
+		var onsubmit=id==""?function (e){
+				var btsid=nBtsId.val(),
+				agid=nAgId.val(),
+				start=nStart.val(),
+				end=nEnd.val();
+				plan.add(btsid,agid,start,end,addSuccess);
+			}:function(e){
 				var id=nId.val(),
 				btsid=nBtsId.val(),
 				agid=nAgId.val(),
 				start=nStart.val(),
 				end=nEnd.val();
 				plan.edit(id,btsid,agid,start,end,editSuccess);
-				}
-		});
-		nAddSubBtn&&nAddSubBtn.on("click",function(e){
-			if(formvalid.valid()){
-				var btsid=nBtsId.val(),
-				agid=nAgId.val(),
-				start=nStart.val(),
-				end=nEnd.val();
-				plan.add(btsid,agid,start,end,addSuccess);
 			}
-		});
 		
 	},
 	/**

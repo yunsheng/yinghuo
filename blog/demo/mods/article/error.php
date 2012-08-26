@@ -1,3 +1,7 @@
 <article class="article">
-		дЗ╡Иур╣дндуб╡╩╢Фтзё║<input type="button" class="button J_Add" value="лМ╪сндуб" />
+		Д╨╡О╪▄Ф ┌Ф≈═Ф┌╗Ф┐ЁХ╕│Ф÷╔Г°▀Г └Ф√┤Г╚═О╪▄Д╫═Е▐╞Д╩╔О╪ 
+		<ul>
+			<li><a href="article.php"> Ф╣▐Х╖┬Е┘╤Д╩√Ф√┤Г╚═</a>  </li>
+			<li ><a class="J_Add" href="#">Ф╥╩Е┼═Ф√┤Г╚═</a></li>
+		</ul>
 </article>

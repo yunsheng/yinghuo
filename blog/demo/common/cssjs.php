@@ -3,7 +3,7 @@
   $CSS_ARR=array("index"=>",blog/css/index.css","article"=>",blog/css/article.css");
   $CSS_PAGE=$CSS_ARR[$page];
  ?>	
-<meta charset="gbk" />
+<meta charset="UTF-8" />
 <title><?=$title?></title>
 <meta name="author" content="blog" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">

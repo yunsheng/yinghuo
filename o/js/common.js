@@ -57,64 +57,85 @@ KISSY.add('common', function(S) {
 
         },
         /**
-        * 搜索
-        * @param url 搜索结果页跳转地址
-        */
-        search: function(url) {
-            var inputNode = S.one(".search_input"),
-            selectNode = S.one(".search_select"),
-            selectUl = S.one(".search_select ul"),
-            selectLi = S.all(".search_select ul li"),
-            btnNode = S.one(".search_btn"),
-            defaultNode = S.one(".search_select .default"),
-            clickNode = S.one(".search_click"),
-            url = url,
-            type = 0,
-            defaultValue = "请输入",
-            hide = function() {
-                selectUl.addClass("dn");
-                selectLi.removeClass("hovered");
-                clickNode.removeClass("search_click_mouseentered");
-            },
-            show = function() {
-                selectUl.removeClass("dn");
-                clickNode.addClass("search_click_mouseentered");
-            };
-            //事件绑定
-            inputNode.on("focusout", function(e) {
-                var value = inputNode.val();
-                if (value == "") {
-                    inputNode.val(defaultValue).addClass("reset");
-                }
-            });
-            inputNode.on("focusin", function(e) {
-                var value = inputNode.val();
-                if (value == defaultValue) {
-                    inputNode.val("").removeClass("reset");
-                }
-            });
-            btnNode.on("click", function(e) {
-                e.halt();
-                var content = inputNode.val(),
-                //+ "type=" + type
-                uri = url + "keywords=" + escape(content);
-                window.open(uri);
-            });
-            defaultNode.on("mouseenter", show);
-            selectLi.on("mouseenter", function(e) {
-                var targetNode = S.one(e.currentTarget);
-                targetNode.addClass("hovered");
-                targetNode.siblings("li").removeClass("hovered");
-            });
-            selectLi.on("click", function(e) {
-                var targetNode = S.one(e.currentTarget);
-                type = targetNode.val();
-                defaultNode.html(targetNode.html());
-                hide();
-            });
-            selectNode.on("mouseleave", hide)
-
+		 *  是否登录判断
+		 * @name Common#isLogin
+		 * @param sucFun 已登录回调函数
+		 * @param failFun 未登录回调函数
+		 */
+        isLogin: function (sucFun,fialFun) {
+             S.Common.ajax({
+             	url:"http://yinghuo.com/o/islogin.php",
+             	type:'post',
+				dataType:'json',
+				cache:false,
+				data:{
+					result:"json"
+				},
+				success:function(data){
+					if(data.isSuccess){
+						sucFun(data);
+					}else{
+						fialFun(data);
+					}
+				},
+				error:fialFun
+             	}
+             );
         },
+        /**  
+		 * @function
+		 * @name Common#userLogin
+		 * @param {Boolean} isiframe  
+		 * @param url 回调地址/回调函数
+		 * */
+        userLogin: function (isIframe,url) {
+        	if(isIframe){
+        		var loginUrl="http://yinghuo.com/o/login.php?{type}="+url;
+	           
+	            S.Common.LOGINBOX = new S.Win("#J_LogoWin", {
+	                width: 320,
+	                height: 160,
+	                src: loginUrl.replace(/{type}/,"callback")
+	            });
+	            S.Common.LOGINBOX.show();
+        	}else{
+				window.location=loginUrl.replace(/{type}/,"redirect");
+        	}
+            
+        },
+        loginBack:function(data){
+        	S.Common.LOGINBOX.hide();
+        	var nLogin=S.one(".J_UserLogin"),
+				nExit=S.one(".J_UserExit"),
+				nName=S.one(".J_UserName");
+				nName.html(data.name);
+				nName.show();
+				nExit.show();
+				nLogin.hide();
+        },
+        handleStr:function(str,cfg){
+			var str=str;
+			//去除前后空格
+			if(cfg['trim']){
+				str=S.trim(str);
+			}
+			if(cfg['escape']){
+				str=S.escapeHTML(str);
+			}
+			if(cfg['uri']){
+				str=encodeURI(str);
+			}
+			if(cfg['uri2']){
+				str=encodeURI(encodeURI(str));
+			}
+			if(cfg['uric']){
+				str=encodeURIComponent(str);
+			}
+			if(cfg['uric2']){
+				str=encodeURIComponent(encodeURIComponent(str));
+			}
+			return str;
+		},
         ajax:function(cfg){
         	S.io(cfg)
         },

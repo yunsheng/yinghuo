@@ -1,0 +1,89 @@
+/**=====================================
+ * 添加到购物车弹窗	====================
+======================================= */
+.detail
+{
+	position:relative !important;
+	}
+#jump_answer
+{
+	width:400px;
+	height:160px;
+	z-index:50;
+	position:absolute;
+	border:solid 1px #aa0c00;
+	top:239px;
+	background-color:#f0ffe5;
+	left:8px;
+	display:none;
+	}
+#jump_answer .ok
+{
+	position:absolute;
+	top:30px;
+	left:25px;
+	width:37px;
+	height:34px;
+	}
+#jump_answer .j_a_content
+{
+	position:absolute;
+	top:30px;
+	left:80px;
+	}
+#jump_answer .j_a_content h4
+{
+	height:30px;
+	line-height:30px;
+	font-size:15px;
+	}
+#jump_answer .j_a_content .accounts
+{
+	height:30px;
+	line-height:30px;
+	font-size:13px;
+	color:#555555;
+	margin-bottom:10px;
+	}
+#jump_answer .j_a_content .accounts span
+{
+	font-size:15px;
+	font-weight:bolder;
+	color:Black;
+	}
+#jump_answer .j_a_content .btns .go_account,#jump_answer .j_a_content .btns .go_buy
+{
+	background:url("../img/btn.jpg") no-repeat;
+	height:25px;
+	width:98px;
+	line-height:25px;
+	color:#ffffff;
+	display:block;
+	text-decoration:none;
+	float:left;
+	text-align:center;
+	font-size:13px;
+	font-weight:bolder;
+	}
+#jump_answer .j_a_content .btns .go_account:hover,#jump_answer .j_a_content .btns .go_buy:hover
+{
+	cursor:pointer;
+	text-decoration:underline;
+	}
+#jump_answer .j_a_content .btns .go_buy
+{
+	margin-left:15px;
+	}
+	
+#jump_answer .close
+{
+	display:block;
+	background:url("../img/close.jpg") no-repeat;
+	width:59px;
+	height:24px;
+	top:2px;
+	right:2px;
+	position:absolute;
+	cursor:pointer;
+	
+	}

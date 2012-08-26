@@ -3,9 +3,9 @@
      
    class Login{
    	  /**
-	   * ÓÃ»§µÇÂ¼
-	   * @param $name ÓÃ»§Ãû
-	   * @param $pwd ÓÃ»§ÃÜÂë
+	   * ç”¨æˆ·ç™»å½•
+	   * @param $name ç”¨æˆ·å
+	   * @param $pwd ç”¨æˆ·å¯†ç 
 	   */
 	  public function userLogin($name ,$pwd){
 	  	$commetUser=new User("");
@@ -21,7 +21,7 @@
    	  }
 	  
 	  /**
-	   * ÓÃ»§ÍË³ö
+	   * ç”¨æˆ·é€€å‡º
 	   */
 	  public function userExit(){
 	  		session_start();
@@ -29,21 +29,21 @@
 			setcookie('_nk_',"",time()-3600);
    	  }
 	  /**
-	   * ÊÇ·ñµÇÂ¼ÅĞ¶Ï
+	   * æ˜¯å¦ç™»å½•åˆ¤æ–­
 	   */
    	  public function isLogin($result){
    	  	 session_start();
 		 $session=$_SESSION['_nk_'];
 		  if( $session!=""&&$session!=null){
 		   	 if($result=="json"){
-		   	  	return ("{\"isLogin\":true,\"name\":\"$session\",\"code\":1000}");
+		   	  	return ("{\"isSuccess\":true,\"name\":\"$session\",\"code\":1000}");
 			 }else if($result="str"){
 			 	return $session;
 			 }
 		}else{
-			// ·ÇµÇÂ¼×´Ì¬£¬Ö´ĞĞ¶Ô·ÇµÇÂ¼µÄ´¦Àí²Ù×÷£¬ÀıÈçÌø»Øµ½µÇÂ¼Ò³Ãæ
+			// éç™»å½•çŠ¶æ€ï¼Œæ‰§è¡Œå¯¹éç™»å½•çš„å¤„ç†æ“ä½œï¼Œä¾‹å¦‚è·³å›åˆ°ç™»å½•é¡µé¢
 		   	  if($result=="json"){
-		   	  	return ("{\"isLogin\":false,\"code\":1003}");
+		   	  	return ("{\"isSuccess\":false,\"code\":1003}");
 		   	  }else if($result=="bool"){
 		   	  	return false;
 		   	  }else{

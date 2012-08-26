@@ -11,12 +11,10 @@ KISSY.use("map,top,comet,btshandle,areaselect",function(S){
 			sucFun(data,true);
 		};
 		var sucFun=function(data,isLoginback){
-			if(data&&data.isLogin){
 				if(isLoginback){
 					S.Common.loginBack(data);
 				}
 				obj&&S.isObject(obj)?callback.apply(obj,args):callback(args);
-			}
 		},
 		failFun=function(){
 			S.Common.userLogin(true,"LOGIN_BACK");

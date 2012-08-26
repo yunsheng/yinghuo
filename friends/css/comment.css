@@ -1,0 +1,81 @@
+.commentWrap .commentMain {
+    background: none repeat scroll 0 0 #FFFFFF;
+    padding: 30px 10px 54px 30px;
+    width: 410px;
+}
+
+.commentWrap .commentMain .courseTitle, .commentWrap .commentMain .comment, .commentWrap .commentMain .commentInfo {
+    margin-bottom: 20px;
+    overflow: hidden;
+    width: 100%;
+}
+.commentWrap .commentMain .courseTitle a {
+    color: #057BD2;
+}
+.commentWrap .commentMain .commentInfo span {
+    float: left;
+}
+.commentWrap .commentMain .commentInfo textarea {
+    border-color: #666666 #CCCCCC #CCCCCC #666666;
+    border-style: solid;
+    border-width: 1px;
+    height: 142px;
+    overflow: auto;
+    width: 328px;
+}
+.commentWrap .commentMain .comment .star {
+    float: left;
+    height: 15px;
+    margin-right: 10px;
+}
+.commentWrap .commentMain .comment .star li, .commentWrap .commentMain .comment .star li.on {
+    background: url("../images/image/star.gif") no-repeat scroll 0 0 transparent;
+}
+.commentWrap .commentMain .comment .star li {
+    background-position: 0 -16px;
+    cursor: pointer;
+    float: left;
+    height: 15px;
+    width: 15px;
+}
+.commentWrap .commentMain .comment .star li.on {
+    background-position: 0 0;
+}
+.commentWrap .commentMain .comment span {
+    float: left;
+}
+.commentWrap .commentMain .comment .starInfo {
+    background-color: #D00B01;
+    border-radius: 1px 1px 1px 1px;
+    color: #FFFFFF;
+    float: left;
+    height: 20px;
+    padding: 0 20px;
+    position: relative;
+    text-align: center;
+}
+.commentWrap .commentMain .comment .starInfo s {
+    background: url("../images/image/right-arrow.gif") no-repeat scroll 0 0 transparent;
+    height: 8px;
+    left: -5px;
+    position: absolute;
+    top: 5px;
+    width: 6px;
+}
+.commentWrap .commentMain .commentInfo .tips {
+    margin-left: 60px;
+    width: 100%;
+}
+.commentWrap .commentMain .commentInfo .tips strong {
+    color: #D00B01;
+}
+.commentWrap .commentMain .commentInfo .confirm {
+    background: url("../images/image/submit.gif") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 25px;
+    margin: 16px 0 0 60px;
+    width: 86px;
+}
+.commentWrap .commentMain .inputColor{
+	color: #999;
+}

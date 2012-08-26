@@ -4,7 +4,7 @@
 KISSY.add("detail",function(S){
 	/**
 	 * @class Detail
-	 * @param menuid ÎÄÕÂÀàĞÍ
+	 * @param menuid æ–‡ç« ç±»å‹
 	 */
 	function Detail(){
 		this._init.apply(this,arguments);
@@ -17,7 +17,7 @@ KISSY.add("detail",function(S){
 			self.editWin=null;
 			self.tForm='<form id="J_ValidForm" method="post" action="../data/article.php"  class="ks-tdform">'+
 						'<div class="input-content default">'+
-							'<label class="input-label" for="title" >ÎÄÕÂ±êÌâ£º</label>'+
+							'<label class="input-label" for="title" >æ–‡ç« æ ‡é¢˜ï¼š</label>'+
 							'<div class="input-wrap">'+
 								'<span class="input-border">'+
 									'<input type="text" class="J_Title input-text" value="{{title}}" name="title"/>'+
@@ -26,34 +26,34 @@ KISSY.add("detail",function(S){
 							'<span class="input-tip"></span>'+
 						'</div>'+
 						'<div class="input-content default">'+
-							'<label class="input-label"  >ÎÄÕÂÀàĞÍ£º</label>'+
+							'<label class="input-label"  >æ–‡ç« ç±»å‹ï¼š</label>'+
 							'<select id="J_Type" class="input-select" >'+
 							'{{#each options as option}}<option value="{{option.value}}" {{#if option.selected}}selected="true"{{/if}}">{{option.name}}</option>{{/each}}'+
 							'</select>'+
 						'</div>'+
 						'<div class="input-content default intro-con">'+
-							'<label class="input-label" for="intro" >ÎÄÕÂ¼ò½é£º</label>'+
+							'<label class="input-label" for="intro" >æ–‡ç« ç®€ä»‹ï¼š</label>'+
 							'<textarea class="J_Intro paragram intro default" name="intro">'+
 								'{{intro}}'+
 							'</textarea>'+
 							'<span class="number-con">'+
-								'Äú»¹¿ÉÊäÈë<span class="J_IntroNumber number" ">'+
+								'æ‚¨è¿˜å¯è¾“å…¥<span class="J_IntroNumber number" ">'+
 									'{{intromax}}'+
-								'</span>×Ö'+
+								'</span>å­—'+
 							'</span>'+
 						'</div>'+
 						'<div class="input-content default paragram-con">'+
-							'<label class="input-label" for="paragram" >ÎÄÕÂÄÚÈİ£º</label>'+
+							'<label class="input-label" for="paragram" >æ–‡ç« å†…å®¹ï¼š</label>'+
 							'<textarea class="J_Paragram paragram default" name="paragram">'+
 								'{{paragram}}'+
 							'</textarea>'+
 							'<span class="number-con">'+
-								'Äú»¹¿ÉÊäÈë<span class="J_ParaNumber number" ">'+
+								'æ‚¨è¿˜å¯è¾“å…¥<span class="J_ParaNumber number" ">'+
 									'{{paramax}}'+
-								'</span>×Ö'+
+								'</span>å­—'+
 							'</span>'+
 						'</div>'+
-						'<input type="button" class="{{button}} sub button" value="Ìá½»" />'+
+						'<input type="button" class="{{button}} sub button" value="æäº¤" />'+
 							
 					'</form>';
 			S.getScript("../js/common/articletype.js");
@@ -68,7 +68,7 @@ KISSY.add("detail",function(S){
 			nEditBtn=S.all(".J_Edit"),
 			nDelBtn=S.all(".J_Del"),
 			nAddBtn=S.all(".J_Add");
-			//ĞŞ¸ÄÎÄÕÂ°´Å¥µã»÷ÊÂ¼ş
+			//ä¿®æ”¹æ–‡ç« æŒ‰é’®ç‚¹å‡»äº‹ä»¶
 			nEditBtn&&nEditBtn.on("click",function(e){
 				var nTarget=S.one(e.currentTarget),
 				title=S.Common.handleStr(nTitle.html(),{
@@ -83,18 +83,18 @@ KISSY.add("detail",function(S){
 				id=nTarget.attr("pageid");
 				self.edit(id,title,intro,paragram);
 			});
-			//É¾³ıÎÄÕÂÊÂ¼ş°ó¶¨
+			//åˆ é™¤æ–‡ç« äº‹ä»¶ç»‘å®š
 			nDelBtn&&nDelBtn.on('click',function(e){
 				var nTarget=S.one(e.currentTarget),
 				id=nTarget.attr("pageid");
 				self.del(id);
 			});
-			//Ìí¼ÓÎÄÕÂÊÂ¼ş°ó¶¨
+			//æ·»åŠ æ–‡ç« äº‹ä»¶ç»‘å®š
 			nAddBtn&&nAddBtn.on("click",function(e){
 				var nTarget=S.one(e.currentTarget);
 				self.add();
 			});
-			//ÏÔÊ¾²Ù×÷°´Å¥
+			//æ˜¾ç¤ºæ“ä½œæŒ‰é’®
 			nOperate&&nOperate.on("mouseenter",function(e){
 				var nTarget=S.one(e.currentTarget),
 				nContent=nTarget.one(".con");
@@ -107,10 +107,10 @@ KISSY.add("detail",function(S){
 			});
 		},
 	/**
-	 * ±à¼­ÎÄÕÂ
-	 * @param id ±»±à¼­ÎÄÕÂµÄid
-	 * @param title ÎÄÕÂ±à¼­Ç°µÄ±êÌâ
-	 * @param paragram ÎÄÕÂ±à¼­Ç°µÄÄÚÈİ
+	 * ç¼–è¾‘æ–‡ç« 
+	 * @param id è¢«ç¼–è¾‘æ–‡ç« çš„id
+	 * @param title æ–‡ç« ç¼–è¾‘å‰çš„æ ‡é¢˜
+	 * @param paragram æ–‡ç« ç¼–è¾‘å‰çš„å†…å®¹
 	 */
 	edit:function(id,title,intro,paragram){
 		var self=this,
@@ -143,30 +143,30 @@ KISSY.add("detail",function(S){
 		self.valid(id);
 	},
 	/**
-	 * É¾³ıÎÄÕÂ
-	 * @param id ±»±à¼­ÎÄÕÂµÄid
-	 * @param title ÎÄÕÂ±à¼­Ç°µÄ±êÌâ
-	 * @param paragram ÎÄÕÂ±à¼­Ç°µÄÄÚÈİ
+	 * åˆ é™¤æ–‡ç« 
+	 * @param id è¢«ç¼–è¾‘æ–‡ç« çš„id
+	 * @param title æ–‡ç« ç¼–è¾‘å‰çš„æ ‡é¢˜
+	 * @param paragram æ–‡ç« ç¼–è¾‘å‰çš„å†…å®¹
 	 */
 	del:function(id){
 		var self=this,
 		type=self.menuid,
 		article=self.article;
-		 S.Win.confirm("ÄúÈ·¶¨ÒªÉ¾³ı±¾ÆªÎÄÕÂÂğ£¿","¾¯¸æ",function(){
+		 S.Win.confirm("æ‚¨ç¡®å®šè¦åˆ é™¤æœ¬ç¯‡æ–‡ç« å—ï¼Ÿ","è­¦å‘Š",function(){
 		 	article.del(id,function(data){
 		 		if (data.isSuccess) {
-		 			S.Win.inform("³É¹¦É¾³ı"); 
+		 			S.Win.inform("æˆåŠŸåˆ é™¤"); 
 					setTimeout(function(){
 						window.location.href="article.php?type="+type+"&stamp="+Math.random();
 					},500);
 		 		} else{
-		 			S.Win.warn(data.message,"É¾³ıÊ§°Ü");
+		 			S.Win.warn(data.message,"åˆ é™¤å¤±è´¥");
 		 		};
 		 	});
 		 });
 	},
 	/**
-	 * Ìí¼ÓÎÄÕÂ
+	 * æ·»åŠ æ–‡ç« 
 	 */
 	add:function(){
 		var self=this,
@@ -181,7 +181,7 @@ KISSY.add("detail",function(S){
 			}
 		});
 		var winContent=S.Template(tForm).render({
-			title:'ÇëÊäÈëÎÄÕÂ±êÌâ',
+			title:'è¯·è¾“å…¥æ–‡ç« æ ‡é¢˜',
 			intro:'',
 			intromax:500,
 			paragram:'',
@@ -198,8 +198,8 @@ KISSY.add("detail",function(S){
 		self.valid();
 	},
 	/**
-	 * ±íµ¥´¦Àí
-	 * @param id ±à¼­ÎÄÕÂµÄid
+	 * è¡¨å•å¤„ç†
+	 * @param id ç¼–è¾‘æ–‡ç« çš„id
 	 */
 	valid:function(id){
 		var self=this,
@@ -208,12 +208,12 @@ KISSY.add("detail",function(S){
 		var formvalid=new S.Validation("#J_ValidForm",{
 				 		list:[{
 				 			node:".J_Title",
-				 			defVal:"ÇëÊäÈëÎÄÕÂ±êÌâ",
+				 			defVal:"è¯·è¾“å…¥æ–‡ç« æ ‡é¢˜",
 				 			allowNull:false,
 				 			checkObj:{
 				 				reg:/.{1,20}/,
-				 				rightMes:"±êÌâºÏ·¨",
-				 				errorMes:"ÎÄÕÂ±êÌâ²»ÄÜ³¬¹ı20¸ö×Ö·û"
+				 				rightMes:"æ ‡é¢˜åˆæ³•",
+				 				errorMes:"æ–‡ç« æ ‡é¢˜ä¸èƒ½è¶…è¿‡20ä¸ªå­—ç¬¦"
 				 			}
 				 		}]
 				 }),
@@ -235,23 +235,23 @@ KISSY.add("detail",function(S){
 
 			editWin.hide();
 			if (data.isSuccess) {
-				S.Win.inform("²Ù×÷³É¹¦,Ò³Ãæ½«ÖØĞÂ¼ÓÔØ£¡");
+				S.Win.inform("æ“ä½œæˆåŠŸ,é¡µé¢å°†é‡æ–°åŠ è½½ï¼");
 				setTimeout(function(){
 					window.location.href="article.php?type="+data.type+"&id="+id+"&stamp="+Math.random();
 				},500);
 			}else{
-				S.Win.warn(data.message,"ĞŞ¸ÄÊ§°Ü");
+				S.Win.warn(data.message,"ä¿®æ”¹å¤±è´¥");
 			};
 		},
 		addSuccess=function(data){
 			editWin.hide();
 			if (data.isSuccess) {
-				S.Win.inform("Ìí¼Ó³É¹¦");
+				S.Win.inform("æ·»åŠ æˆåŠŸ");
 				setTimeout(function(){
 					window.location.href="article.php?type="+data.type+"&stamp="+Math.random();
 				},500);
 			}else{
-				S.Win.warn(data.message,"Ìí¼ÓÊ§°Ü");
+				S.Win.warn(data.message,"æ·»åŠ å¤±è´¥");
 			};
 		};
 		nEidtSubBtn&&nEidtSubBtn.on("click",function(e){

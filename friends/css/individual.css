@@ -1,0 +1,1110 @@
+﻿
+/*********IndividualCenter********/
+.post_content_container{
+	color: #666;
+}
+.individual_container
+{
+    width:980px;
+    margin:0 auto;
+}
+.individual_left
+{
+    width:170px;
+    float:left;
+}
+.individual_infor
+{
+    height:100%;
+    border:1px solid #a0a0a0;
+}
+
+.individual_infor ul 
+{
+     padding:0; margin:0;
+}
+#main1,#main2,#main3,#main4 
+{ 
+     height:29px;
+     line-height:29px; 
+     text-align:center;
+     font-size:14px;
+     font-weight:bold;
+     color:#fff; 
+     background:url("images/image/side_bar.jpg") repeat-x; 
+     cursor:pointer; 
+     border-bottom:1px solid #fff;
+}
+#child1,#child2,#child3,#child4
+{
+    background:#ffffff;
+}
+#child1 ul li,#child2 ul li,#child3 ul li,#child4 ul li 
+{ 
+    border-bottom:1px solid #fff; line-height:180%;
+    text-align:center;
+}
+.adv_pic
+{
+    border:1px solid #a0a0a0;
+    margin-top:10px;
+}
+.adv_pic li
+{
+    padding-top:10px;
+    width:151px;
+    margin:0 auto; 
+}
+.adv_pic li li
+{
+    margin:0;
+}
+
+.individual_right
+{
+    width:800px;
+    float:left;
+    /*border:1px solid #a0a0a0;*/
+    margin-left:10px;
+    padding-bottom:20px;
+}
+.individual_right h1
+{
+    height:29px;
+    background:url("images/image/green_bg.jpg") repeat-x;
+    line-height:29px;
+    padding-left:60px;
+    font-size:16px;
+    color:white;
+}
+.individual_right span
+{
+    display:block;
+}
+.current_location
+{
+    height:50px;
+    line-height:50px;
+    font-size:14px;
+    font-weight:bold;
+    color:#f39800;
+    padding-left:60px;
+}
+.left_integral
+{
+    color:#005bac;
+    padding-left:60px;
+}
+.num
+{
+    font-size:16px;
+    color:#eb6100;
+}
+.integral_list
+{
+    width:660px;
+    margin:0 auto;
+    margin-top:20px;
+}
+.integral_list table
+{
+    width:660px;
+    text-align:center;
+}
+.integral_list th,.integral_list td
+{
+    height:30px;
+    border:1px solid #d2d2d2;
+}
+.integral_list th
+{
+    color:#005bac;
+    background-color:#e2f4fc;
+}
+.integral_list td
+{
+    color:#959595;
+}
+.integral_even
+{
+    background-color:#eee;
+}
+/*******PwdModify*******/
+.change_pwd h1
+{
+    height:29px;
+    line-height:29px;
+    font-size:16px;
+    color:#fff;
+    padding-left:60px;
+    background:url("images/image/green_bg.jpg") repeat-x;
+}
+.pwd_modify h2,.getback_pwd h2
+{
+    height:30px;
+    line-height:30px;
+    padding-left:30px;
+    background-color:#e1ecca;
+}
+.pwd_modify ul,.getback_pwd ul
+{
+    padding-left:67px;
+}
+.pwd_modify li,.getback_pwd li
+{
+    padding:13px 0;
+}
+.change_pwd_text
+{
+    float:left;
+    width:140px;
+    text-align:left;
+}
+.BtnSure
+{
+    margin-left:265px;
+}
+/****MyOrder****/
+.myorder table,.mybalance table,.mycomment table
+{
+    border-collapse:collapse;
+    width:780px;
+    text-align:center;
+    font-size:12px;
+    
+}
+.myorder tr,.mybalance tr,.mycomment tr
+{
+    height:30px;
+    border:1px solid #a0a0a0;
+}
+
+/*******************************************/
+/*********Forum*********/
+.forum
+{
+    width:1000px;
+}
+.forum_left
+{
+    width:810px;
+    float:left;
+    border:1px solid #d2d7da;
+}
+.title-forum
+{
+   background: #F9F4CE;
+    color: #333333;
+    font-size: 14px;
+    font-weight: bold;
+    height: 31px;
+    line-height: 31px;
+    padding-left: 10px;
+}
+.latest_pic_news
+{
+    width:298px;
+    float:left;
+    border:1px solid #d2d7da;
+}
+/*公告*/
+
+.announcement
+{
+     background:#F7F7F7;
+     padding: 10px;
+     margin: 10px 0;
+     border-bottom: 1px solid #E6E7E1;
+     border-top: 1px solid #E6E7E1;
+}
+.announcement strong{
+	font-weight: bold;
+	padding:0 20px;
+}
+.nickname
+{
+    float:right;
+}
+
+.pages_btns
+{
+    padding:10px 0;
+}
+.posts_list li
+{
+    height:38px;
+    line-height:38px;
+    padding-left:70px;
+    border-top:1px solid #d3d8de;
+}
+.post_classify
+{
+    color:#23537b;
+}
+.post_title
+{
+    display:inline-block;
+    width:380px;
+}
+.author_time
+{
+    display:inline-block;
+    width:110px;
+}
+.reply
+{
+    display:inline-block;
+    width:70px;
+}
+.latest_post
+{
+    display:inline-block;
+    width:100px;
+}
+
+.forum_right
+{
+    width:178px;
+    float:left;
+    margin-left:8px;
+    border:1px solid #d2d7da;
+    background-color:#f5fafe;
+}
+.login_register
+{
+    border:1px solid #d2d7da;
+}
+.essence_posts
+{
+    margin-top:10px;
+    border:1px solid #d2d7da;
+}
+
+/*******PostContent*******/
+.post_content
+{
+    width:1000px;
+    margin:0 auto;
+}
+
+.content h1,.post_reply h1
+{
+    font-weight:bold;
+    color:#4EBEFF;
+    background-color:#F8F2CB;
+    height:30px;
+    line-height:30px;
+    padding-left:15px;
+}
+.content-left
+{
+    width:170px;
+    float:left;
+    background-color:#e9f3fd;
+}
+.content-left h2
+{
+    height:37px;
+    line-height:37px;
+    border-bottom:1px solid #cbd7e3;
+    padding-left:20px;
+    font-weight:bold;
+}
+.avatar2
+{
+    margin:10px 0 10px 20px;
+}
+.content-left ul
+{
+    padding-left:20px;
+}
+.content_right
+{
+   float:left;
+   margin-left:15px; 
+}
+
+.publish_time a
+{
+    display:block;
+    height:37px;
+    line-height:37px;
+    border-bottom:1px solid #cbd7e3;
+}
+.post_reply_left
+{
+    width:170px;
+    height:263px;
+    background-color:#e9f3fd;
+}
+.post_reply_left img
+{
+    padding:30px 0 0 20px;
+}
+
+/*====================================================
+ * usercenter=========================================
+ ====================================================*/
+
+#content
+{
+	width:960px;
+	margin:0 auto;
+}
+#head_path  
+{
+	width:960px;
+	background-color:Red;
+	height:30px;
+	margin-bottom:15px;
+}
+#left_nav 
+{
+	width:170px;
+	float:left;
+	border:solid 1px #aa0c00;
+	border-top:0px;
+	}
+#left_nav ul
+{
+	list-style:none;
+	}
+#left_nav ul h3 
+{
+	text-align:center;
+	height:35px;
+	background-image:url("img/left_nav_top.jpg");
+	line-height:35px;
+	color:White;
+	font-weight:normal;
+	font-size:15px;
+	border-bottom:solid 1px #aa0c00;
+	border-top:solid 1px #aa0c00;
+	}
+/*左侧导航的项目的样式*/
+#left_nav ul .item 
+{
+	text-indent:2.1em;
+	border-bottom:dashed 1px #bdc7d5;
+	}
+#left_nav ul .item a
+{
+	display:block;
+	height:28px;
+	line-height:28px;
+	width:170px;
+	color:Black;
+	background-color:#eeeeee;
+	}
+#left_nav ul .item a:hover
+{
+	color:#aa0c00 !important;
+	background:url("img/nav_a_bg.jpg") no-repeat !important;
+	}
+/*左侧导航的项目的最后一项的样式*/
+#left_nav ul .last 
+{
+	border-bottom:0px;
+}
+	/*左侧导航的项目超链接的样式*/
+#left_nav ul a 
+{
+	text-decoration:none;
+	font-size:13px;
+	height:28px;
+	width:170px;
+	}
+/*----------------------------jquery---鼠标移上时所用样式-------------------------------------*/
+.ahov
+{
+	color:#aa0c00 !important;
+	background:url("img/nav_a_bg.jpg") no-repeat;
+	}
+	/*鼠标移上表格时样式*/
+.tr_hov 
+{
+	background-color:#eeeeee;
+	cursor:pointer;
+	}
+/*-------------------------------------iframe样式------------------------------------------*/
+#main
+{
+	width:788px;
+	float:left;
+	overflow:hidden;
+	}
+iframe
+{
+	width:100%;
+	border:0px;
+	height:500px;
+	}
+/*---------------------------加入iframe的网页主窗体样式----------------------------*/
+#main_content
+{
+	width:788px;
+	}
+/*---------------------------个人中心首页样式----------------------------*/
+#personal_data
+{
+	width:774px;
+	height:194px;
+	margin-left:14px;
+	background-image:url("img/user_center_ul.jpg");
+	background-repeat:no-repeat;
+	position:relative;
+	}
+.personal_data_img
+{
+	width:120px;
+	height:120px;
+	position:absolute;
+	border:solid 1px #dddddd;
+	top:26px;
+	left:20px;
+	}
+.personal_data_img img
+{
+	width:120px;
+	height:120px;	
+	}
+.personal_data_welcome
+{
+	position:absolute;
+	height:30px;
+	top:20px;
+	left:160px;
+	}
+#personal_data .hellow
+{
+	font-size:13px;
+	margin-left:20px;
+	height:30px;
+	line-height:30px;
+	color:#999999;
+	}
+#personal_data .username
+{
+	font-size:15px;
+	color:#aa0c00;
+	margin-right:15px;
+	height:30px;
+	line-height:30px;
+	}
+#personal_data .modify a
+{
+	color:Black;
+	text-decoration:none;
+	height:30px;
+	line-height:30px;
+	font-size:13px;
+	}
+#personal_data .modify a:hover
+{
+	text-decoration:underline;
+	color:#aa0c00;
+	}	
+#personal_data .personal_data_ul
+{
+	width:570px;
+	border:solid 1px #dddddd;
+	background-color:#eeeeee;
+	height:60px;
+	padding-left:20px;
+	list-style:none;
+	position:absolute;
+	top:60px;
+	left:160px;
+	}
+#personal_data .personal_data_ul li
+{
+	float:left;
+	width:260px;
+	height:30px;
+	line-height:30px;
+	font-size:14px;
+	color:#999999;
+	}
+#personal_data .personal_data_ul li a
+{
+	color:#aa0c00;
+	font-size:14px;
+	text-decoration:none;
+	}
+#personal_data .personal_data_ul li .mall
+{
+	margin-left:20px;
+	}
+#personal_data .personal_data_ul li a:hover
+{
+	color:#aa0c00;
+	font-size:15px;
+	text-decoration:underline;
+	}
+.personal_data_bottom
+{
+	width:590px;
+	height:30px;
+	border:solid 1px #dddddd;
+	background-color:#eeeeee;
+	position:absolute;
+	top:140px;
+	left:160px;	
+	}
+.personal_data_bottom a
+{
+	text-decoration:none;
+	font-size:13px;
+	color:#999999;
+	line-height:30px;
+	}
+.personal_data_bottom a:hover
+{
+	text-decoration:underline;
+	color:#aa0c00;
+	}
+.personal_data_bottom span
+{
+	margin-left:20px;
+	}
+	/*本周热销产品的框样式*/
+#week_produce 
+{
+	width:772px;
+	height:260px;
+	border:solid 1px #dddddd;
+	margin-left:14px;
+	margin-top:20px;
+	position:relative;
+	}
+	/*本周热销产品的标题样式*/
+#week_produce .produce_ul_title 
+{
+	height:30px;
+	line-height:30px;
+	font-size:14px;
+	border-bottom:solid 1px #dddddd;
+	text-indent:2em;
+	font-weight:bold;
+	}
+#week_produce ul
+{
+	height:220px;
+	width:772px;
+	list-style:none;
+	margin-top:10px;
+	}
+#week_produce ul li
+{
+	float:left;
+	margin-left:16px;
+	width:110px;
+	height:220px;
+	display:inline;
+	vertical-align:middle;
+	}
+#week_produce ul li img
+{
+	width:110px;
+	height:120px;
+	border:0px;
+	}
+#week_produce ul .produce_name
+{
+	width:110px;
+	height:40px;
+	line-height:20px;
+	margin-bottom:3px;
+	}
+#week_produce ul .produce_name a
+{
+	font-size:13px;
+	color:Black;
+	text-decoration:none;
+	}
+#week_produce ul .produce_name a:hover
+{
+	color:#aa0c00;
+	}
+#week_produce ul .market
+{
+	height:40px;
+	line-height:20px;
+	font-size:12px;
+	color:#999999;
+	}
+#week_produce ul .market_price
+{
+	text-decoration:line-through;
+	}
+#week_produce ul .selling_price
+{
+	color:#aa0c00;
+	font-size:13px;
+	}
+#week_produce .more
+{
+	position:absolute;
+	bottom:-25px;
+	right:0px;
+	}
+#week_produce .more a
+{
+	color:#aa0c00;
+	font-weight:bold;
+	text-decoration:none;
+	font-size:14px;
+	}
+#week_produce .more a:hover
+{
+	text-decoration:underline;
+	}
+/*---------------------------个人资料样式-----------------------------------------------*/
+#editor_personal_data
+{
+	width:774px;
+	background-repeat:no-repeat;
+	background-image:url("img/person_data_bg.jpg");
+	height:430px;
+	padding-top:15px;
+	margin-left:14px;
+	}
+/*---------------------------各个网页主标题样式(字数不同时长度不同，最后俩个样式用来调节红线长度)-----------------------------------------------*/
+#editor_personal_data .title_div,#password_manage .title_div,#my_order .title_div,#my_integral .title_div,#my_comment .title_div,#my_posts .title_div,#my_replies .title_div,#my_favorites .title_div,#my_message .title_div,#my_address .title_div
+{
+	height:36px;
+	width:700px;
+	margin-left:37px;
+	background-image:url("img/title_bg.jpg");
+	background-repeat:repeat-x;
+	}
+#editor_personal_data .title_div h3,#password_manage .title_div h3,#my_order .title_div h3,#my_integral .title_div h3,#my_comment .title_div h3,#my_posts .title_div h3,#my_replies .title_div h3,#my_favorites .title_div h3,#my_message .title_div h3,#my_address .title_div h3
+{
+	height:34px;
+	line-height:34px;
+	font-size:15px;
+	border-bottom:solid 2px #aa0c00;
+	width:120px;
+	text-indent:1em;
+	padding:0px !important;
+	}
+#password_manage .title_div h3,#my_order .title_div h3,#my_comment .title_div h3,#my_posts .title_div h3,#my_replies .title_div h3,#my_favorites .title_div h3,#my_message .title_div h3
+{
+	width:96px;
+	}
+#my_integral .title_div h3
+{
+	width:125px;
+	}
+#my_address .title_div h3
+{
+    width:142px;
+    }
+/*----------------------个人资料样式-----------------------------------------------*/
+#editor_personal_data .explain
+{
+	height:25px;
+	line-height:25px;
+	margin-top:9px;
+	text-indent:3em;
+	font-size:12px;
+	color:#999999;
+	}
+#editor_personal_data table
+{
+	margin-left:30px;
+	margin-top:4px;
+	}
+#editor_personal_data table .subject,#password_manage table .subject
+{
+	text-align:right;
+	height:30px;
+	line-height:30px;
+	width:150px;
+	font-size:14px;
+	color:#555555;
+	}
+#editor_personal_data table .content
+{
+	height:30px;
+	line-height:30px;
+	width:300px;
+	font-size:14px;
+	}
+#editor_personal_data table .content .nickname,#editor_personal_data table .content .realname,#editor_personal_data table .content .emall,#editor_personal_data table .content .zip_code,#editor_personal_data table .content .phone,#editor_personal_data table .content .plane
+{
+	width:150px;
+	}
+#editor_personal_data table .content .address
+{
+	width:250px;
+	}
+#editor_personal_data table .content .save
+{
+	width:60px;
+	}
+#editor_personal_data table .content .city
+{
+	margin:0px 10px;
+	}
+/*------------------------------圆角框样式--------------------------------------------------*/
+#round_top
+{
+	background-image:url("img/774top.jpg");
+	background-repeat:no-repeat;
+	width:774px;
+	height:15px;
+	margin-left:14px;
+	}
+#round_bottom
+{
+	background-image:url("img/774bottom.jpg");
+	background-repeat:no-repeat;
+	width:774px;
+	height:15px;
+	margin-left:14px;
+	}
+#password_manage,#comment_details,#my_order,#my_integral,#my_comment,#my_posts,#my_replies,#my_favorites,#my_message,#my_address,#order_details,#message_details
+{
+	background-image:url("img/774horizontal.jpg");
+	width:774px;
+	margin-left:14px;
+	background-repeat:repeat-y;
+	}
+/*------------------------------密码管理和我的留言,地址管理副标题样式--------------------------------------------------*/
+
+#password_manage .subtitle_div,#my_message .subtitle_div,#my_address .subtitle_div,#order_details .subtitle_div,#message_details .subtitle_div,#comment_details .subtitle_div
+{
+	width:700px;
+	height:29px;
+	background-image:url("img/subtitle_bg.jpg");
+	line-height:29px;
+	color:#aa0c00;
+	font-size:14px;
+	margin-left:37px;
+	padding-left:15px;
+	background-repeat:no-repeat;
+	font-weight:normal;
+	margin-top:15px;
+	}
+	#order_details .first,#message_details .subtitle_div,#comment_details .subtitle_div
+	{
+	    margin-top:0px;
+	    }
+	    
+/*------------------------------密码管理和发表留言样式--------------------------------------------------*/
+#password_manage table,#my_message .post_table,#message_details .post_table,#comment_details .post_table
+{
+	margin-left:70px;
+	margin-top:20px;
+	}
+#password_manage table .subject
+{
+	text-align:left;
+	}
+#my_message .post_table td,#message_details .post_table td,#comment_details .post_table td
+{
+	text-align:left;
+	padding-left:15px;
+	}
+#message_details .post_table td,#comment_details .post_table td
+{
+	line-height:25px;
+	}
+#my_message .post_table .subject,#message_details .post_table .subject,#comment_details .post_table .subject
+{
+	width:60px;
+	text-align:right;
+	}
+#message_details .post_table .subject,#comment_details .post_table .subject
+{
+	width:90px !important;
+	}
+#message_details .post_table .subject span
+{
+	float:right;
+	}
+#my_message .post_table td textarea
+{
+	width:500px;
+	font-size:13px;
+	height:80px;
+	}
+#message_details .post_table td,#comment_details .post_table td
+{
+	font-size:15px;
+	width:500px;
+	color:#666666;
+	}
+/*--------------------------------绑定数据后table的样式-------------------------------------*/
+#my_order table,#my_integral table,#my_comment table,#my_posts table,#my_replies table,#my_favorites table,#my_message table,#my_address .addr-list,#track_details .addr-list,#dizhi_list table
+{
+	margin-top:20px;
+	margin-left:37px;
+	}
+#my_order table tr th,#my_integral table tr th,#my_comment table tr th,#my_posts table tr th,#my_replies table tr th,#my_favorites table tr th,#my_message table tr th,#my_address .addr-list tr th,#track_details .addr-list tr th,#dizhi_list table tr th
+{
+	border-bottom:solid 2px #aa0c00;
+	border-top:solid 1px #dddddd;
+	height:30px;
+	font-size:14px;
+	text-align:center;
+	}
+#my_order table tr .number a,#my_comment table tr td a,#my_posts table tr td a,#my_replies table tr td a,#my_message table tr td a,#my_address .addr-list tr td a,#dizhi_list table tr td a
+{
+	color:Black;
+	text-decoration:none;
+	}
+#my_order table tr .number a:hover,#my_comment table tr td a:hover,#my_posts table tr td a:hover,#my_replies table tr td a:hover,#my_message table tr td a:hover,#my_address .addr-list tr td a:hover,#dizhi_list table tr td a:hover
+{
+	color:#aa0c00;
+	text-decoration:underline;
+	cursor:pointer;
+	}
+#my_integral table tr td,#my_order table tr td,#my_comment table tr td,#my_posts table tr td,#my_replies table tr td,#my_message table tr td,#my_address .addr-list tr td,#track_details .addr-list tr td,#dizhi_list table tr td
+{
+	font-size:13px;
+	text-align:center;
+	height:25px;
+	line-height:25px;	
+	color:#555555;
+	}
+/*--------------------------------我的收藏-------------------------------------*/
+#my_favorites table tr td
+{
+	height:90px;
+	text-align:center;
+	color:#555555;
+	font-size:13px;
+	line-height:90px;
+	}
+#my_favorites table tr td img
+{
+	width:60px;
+	height:80px;
+	border:0px;
+	}
+#my_favorites table tr .produce_name p
+{
+	line-height:25px;
+	width:190px;
+	text-align:left;
+	padding-left:50px;
+	}
+#my_favorites table tr .produce_name a,#my_favorites table tr .oprate a
+{
+	color:Black;
+	text-decoration:none;
+	}
+#my_favorites table tr .produce_name a:hover,#my_favorites table tr .oprate a:hover
+{
+	color:#aa0c00;
+	text-decoration:underline;
+	}
+#my_favorites table tr .oprate
+{
+	line-height:25px;
+	
+	}
+/*--------------------------------翻页控件-------------------------------------*/
+.page_control,#my_address .list
+{
+    border-bottom:solid 1px #dddddd;
+    }
+.page_control .pagenation
+{
+    width:700px;
+    text-align:right;
+    }
+.page_control .pagenation a:link,.page_control .pagenation a:visited
+{
+    color:Black;
+    }
+.page_control .pagenation a:hover
+{
+    color:#aa0c00;
+    cursor:pointer;
+    }
+.page_control .pagenation .okbtn
+{
+    color:Black;
+    }
+.page_control .pagenation .input_text
+{
+    color:#aa0c00;
+    }
+/*--------------------------------地址管理-------------------------------------*/
+#my_address .addr-list .consignee
+{
+    width:80px;
+    }
+#my_address .addr-list .addr-detail
+{
+    width:430px;
+    }
+#my_address .addr-list .phone
+{
+    width:90px;
+    }
+#my_address .addr-list .operate
+{
+    width:100px;
+    }
+.edit-info
+{
+	float: left;
+	margin-left: 20px;
+	margin-right: 5px;
+	cursor: pointer;
+	text-decoration: underline;
+}
+.cover-box
+{
+	float: left;
+	position: relative;
+	z-index: 100;
+}
+.dialog-box
+{
+	background-color: #FFFFFF;
+	border-bottom: solid 1px #A10000;
+	border-top: solid 1px #A10000;
+	bottom: 29px;
+	display: none;
+	height: 65px;
+	padding-top: 5px;
+	position: absolute;
+	right: -3px;
+	text-align: center;
+	width: 167px;
+	z-index: 999;
+}
+.close2
+{
+	position: absolute;
+	right: 5px;
+	top: 5px;
+}
+.jian
+{
+	bottom: -9px;
+	position: absolute;
+	right: 15px;
+}
+fieldset
+{
+	border-bottom-style: none;
+	border-bottom-width: 0;
+	border-top-style: none;
+	border-top-width: 0;
+	display: block;
+}
+.edit-addr
+{
+	margin-top: 20px;
+}
+.edit-addr div
+{
+	margin-bottom: 5px;
+}
+.new_dizhi
+{
+	color: #656565;
+	position: relative;
+}
+.new_dizhi td
+{
+	height: 30px;
+}
+.new_dizhi span
+{
+	color: #A10000;
+}
+.new_dizhi span.hei
+{
+	color: #FB7200;
+	margin-right: 10px;
+}
+.edit-addr input
+{
+	border-bottom: solid 1px #A5AFC3;
+	border-top: solid 1px #A5AFC3;
+	color: #999999;
+	height: 21px;
+	line-height: 21px;
+	padding-left: 3px;
+}
+.new_dizhi b
+{
+	border-bottom: solid 1px #A10000;
+	border-top: solid 1px #A10000;
+	color: #A10000;
+	font-weight: normal;
+	margin: 2px 0;
+	padding: 2px 5px;
+	text-align: center;
+}
+#ulOrderReceiver
+{
+	margin: 20px;
+}
+#ulOrderReceiver li
+{
+	padding: 5px;
+	list-style-type: square;
+}
+.ulOrderDetails
+{
+	margin: 20px;
+}
+.ulOrderDetails li
+{
+	padding: 5px;
+	list-style-type: square;
+}
+.edit-addr
+{
+    font-size:12px;
+    width:670px;
+    border:0px;
+    padding-left:50px;
+    }
+.edit-addr .save
+{
+    background-image:url("img/post.gif");
+    height:31px;
+    width:67px;
+    background-repeat:no-repeat;
+    line-height:31px;
+    font-size:15px;
+    text-align:center;
+    }
+.edit-addr .save a:hover
+{
+    cursor:pointer;
+    }
+/*-------------------订单详情--------------------------------------------------------------*/
+#ulOrderReceiver
+{
+    padding-left:50px;
+    }
+#OrderDetailsControl1_ulOrderDetails
+{
+    padding-left:50px;
+    }
+#dizhi_list table .th1
+{
+    width:180px;
+    }
+#dizhi_list table .th2
+{
+    width:360px;
+    }
+#dizhi_list table .th3
+{
+    width:80px;
+    }
+#dizhi_list table .th4
+{
+    width:80px;
+    }

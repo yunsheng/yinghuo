@@ -167,7 +167,35 @@ a,a:link{
 	-ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#ff9900, endColorstr=#ff6600)";/*IE8+*/
 }
 
+/**==============================================
+ * 	fixed=========================================
+ ==============================================*/
 
+#J_GoToTop .button{
+    -moz-transition: all 0.5s ease 0.03s;
+    background: url("http://yinghuo.com/finace/css/icon.png") no-repeat scroll 13px -144px #F3F3F3;
+    border-color: rgba(203, 78, 255, 0.2) rgba(213, 178, 255, 0.4) rgba(113, 178, 133, 0.5) rgba(220, 100, 200, 0.6);
+    border-radius: 45px 80px 0 125px / 70px 130px 12px 69px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 0 5px rgba(125, 25, 125, 0.3) inset, 1px 1px 1px, 2px 2px 1px, -1px -1px 2px, -2px -2px 1px;
+    display: block;
+    height: 50px;
+    overflow: hidden;
+    line-height:5em;
+    text-indent:2em;
+    color:#666;
+    width: 52px;
+}
+#J_GoToTop .button:hover {
+    -moz-transform: rotate(-10deg) scale(1.1) translateX(-3px);
+}
+
+.fixed{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+}
 /**====================================================
  * 响应式设计==========================================
  =====================================================*/

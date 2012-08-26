@@ -1,0 +1,491 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head><meta charset="utf-8" /><link rel="stylesheet" type="text/css" href="css/reset.css" /><link rel="stylesheet" type="text/css" href="css/common.css" />
+
+   
+    
+    <link href="css/list.css" rel="stylesheet" type="text/css" />
+<title>
+	商品列表
+</title></head>
+<body>
+    <form name="aspnetForm" method="post" action="goodslist.aspx?catid=1" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE5MDIxODQzMTUPZBYCZg9kFgICAw9kFgQCAQ9kFgJmDxYCHglpbm5lcmh0bWwFlQEgPHNwYW4+5oKo5aW977yM5qyi6L+O5p2l5Yiw56e75Yqo5a625aSp5LiLITwvc3Bhbj48YSBocmVmPScuLi9Mb2dJbi5hc3B4Jz7or7fnmbvlvZU8L2E+PGEgaHJlZj0nLi4vUmVnaXN0ZXIuYXNweCcgdGFyZ2V0PSdfYmxhbmsnPiDlhY3otLnms6jlhowgPC9hPmQCAw9kFghmDxYCHgtfIUl0ZW1Db3VudAINFhpmD2QWAmYPFQIBMQbmtIHpnaJkAgEPZBYCZg8VAgIxMwnniL3ogqTmsLRkAgIPZBYCZg8VAgIxNAbkubPmtrJkAgMPZBYCZg8VAgIxNQbpnaLpnJxkAgQPZBYCZg8VAgIxNgbnsr7ljY5kAgUPZBYCZg8VAgIxNwbpnaLohpxkAgYPZBYCZg8VAgIxOAbnsr7msrlkAgcPZBYCZg8VAgIxOQnmtqbllIfoho9kAggPZBYCZg8VAgIyMAbpmLLmmZJkAgkPZBYCZg8VAgIyMQbnpZvnl5hkAgoPZBYCZg8VAgIyMgbllrfpm75kAgsPZBYCZg8VAgIyMwbljbjlpoZkAgwPZBYCZg8VAgIyNAzmiqTogqTlpZfoo4VkAgEPFgIfAQICFgRmD2QWAmYPFQcCMzApaW1hZ2VzL2dvb2RzL2dvb2QvMjAxMjA4MTRfMTBfMDRfMjhfbS5qcGct5b+D55u45Y2w5LiJ5bGC6Jaw6KGj6I2J6aaZ5Z6L5omL5biV57q4KjEw5YyFBTEwLjAwLeW/g+ebuOWNsOS4ieWxguiWsOiho+iNiemmmeWei+aJi+W4lee6uCoxMOWMhQAt5b+D55u45Y2w5LiJ5bGC6Jaw6KGj6I2J6aaZ5Z6L5omL5biV57q4KjEw5YyFZAIBD2QWAmYPFQcCMzMpaW1hZ2VzL2dvb2RzL2dvb2QvMjAxMjA4MTRfMTBfMDlfNTVfbS5qcGcJ5Y2I6aSQ55uSBTEwLjAwCeWNiOmkkOebkgAJ5Y2I6aSQ55uSZAICDxYCHwECAxYGZg9kFgJmDxUEAjI2KWltYWdlcy9nb29kcy9nb29kLzIwMTIwODE0XzA5XzM4XzA1X20uanBnFeWSjOelpemrmOaho+W/q+mkkOadrxXlkoznpaXpq5jmoaPlv6vppJDmna9kAgEPZBYCZg8VBAI1MSlpbWFnZXMvZ29vZHMvZ29vZC8yMDEyMDgxNF8xMF81NV81NV9tLmpwZxLmmJ/kuYvmgYvmiYvluJXnurgS5pif5LmL5oGL5omL5biV57q4ZAICD2QWAmYPFQQDMzQ5KWltYWdlcy9nb29kcy9nb29kLzIwMTIwODE3XzAzXzM2XzIyX20uanBnGeS5nemYs0RKMTNCLUQwOETosYbmtYbmnLoZ5Lmd6ZizREoxM0ItRDA4ROixhua1huacumQCAw8WAh8BZmRkNvuB8yHFXW3XGapI1Q1yyrNINC8=" />
+</div>
+
+    
+ <header id="header" class="head">
+        <section class="sitenav">
+            <div id="ctl00_header1_navdiv" class="fl"> <span>您好，欢迎来到移动家天下!</span><a href='../LogIn.aspx'>请登录</a><a href='../Register.aspx' target='_blank'> 免费注册 </a></div>
+            <div class="fr">
+                <a href="ShoppingCart.aspx" target="_blank">
+                    购物车
+                </a>
+                |
+                <a href="../home/index.aspx" target="_blank">
+                    个人中心
+                </a>
+                |
+                <a href="" target="_blank">
+                    帮助
+                </a>
+            </div>
+        </section>
+        <section class="search_con">
+           
+            <div id="jiaSearch" class="search">
+                <div class="search_select">
+                    <p class="selected default" value="0">
+                        全部分类
+                    </p>
+                    <a class="search_click">
+                    </a>
+                    <ul class="dn">
+                        <li value="0">
+                            全部分类
+                        </li>
+                        <li value="1">
+                            个人护理
+                        </li>
+                        <li value="2">
+                            清洁用品
+                        </li>
+                        <li value="3">
+                            厨房用品
+                        </li>
+                        <li value="4">
+                            家居用品
+                        </li>
+                        <li value="5">
+                            母婴用品
+                        </li>
+                        <li value="6">
+                            生活电器
+                        </li>
+                        <li value="7">
+                            箱包/礼品
+                        </li>
+                        <li value="8">
+                            办公用品
+                        </li>
+                        <li value="9">
+                            手机数码
+                        </li>
+                        <li value="10">
+                            汽车用品
+                        </li>
+                        <li value="11">
+                            户外运动
+                        </li>
+                    </ul>
+                </div>
+                <input type="text" class="search_input reset" value="请输入" name="detail"/>
+                <a href="#" class="search_btn" target="_blank">搜索 </a>
+                </div>
+        </section>
+    
+    <nav class="jianav">
+        <div class="nav_con">
+            <section class="nav_classify" id="J_Classify" >
+                <h1 class="title">
+                    全部商品分类
+                </h1>
+                <ul class='clearfix listul dn'>
+                    <li class="even first" dataid="1">
+                       <a href='Categories.aspx?ctid=1'> 食品饮料</a>
+                    </li>
+                    <li class="odd" dataid="2">
+                       <a href='Categories.aspx?ctid=2'> 个人护理</a>
+                    </li>
+                    <li class="even" dataid="3">
+                        <a href='Categories.aspx?ctid=3'>清洁用品</a>
+                    </li>
+                    <li class="odd" dataid="4">
+                      <a href='Categories.aspx?ctid=4'>  厨房用品</a>
+                    </li>
+                    <li class="even" dataid="5">
+                        <a href='Categories.aspx?ctid=5'>家居用品</a>
+                    </li>
+                    <li class="odd" dataid="6">
+                       <a href='Categories.aspx?ctid=6'> 母婴用品</a>
+                    </li>
+                    <li class="even" dataid="7">
+                       <a href='Categories.aspx?ctid=7'> 生活电器</a>
+                    </li>
+                    <li class="odd" dataid="8">
+                        <a href='Categories.aspx?ctid=8>箱包/礼品</a>
+                    </li>
+                    <li class="even" dataid="9">
+                        <a href='Categories.aspx?ctid=9'>办公用品</a>
+                    </li>
+                    <li class="odd" dataid="10">
+                        <a href='Categories.aspx?ctid=10'>手机数码</a>
+                    </li>
+                    <li class="even lastitem" dataid="11">
+                      <a href='Categories.aspx?ctid=11'>  汽车/户外</a>
+                    </li>
+                </ul>
+                <div class="tab-container dn content1">
+                </div>
+                <div class="tab-container dn content2">
+                </div>
+                <div class="tab-container dn content3">
+                </div>
+                <div class="tab-container dn content4">
+                </div>
+                <div class="tab-container dn content5">
+                </div>
+                <div class="tab-container dn content6">
+                </div>
+                <div class="tab-container dn content7">
+                </div>
+                <div class="tab-container dn content8">
+                </div>
+                <div class="tab-container dn content9">
+                </div>
+                <div class="tab-container dn content10">
+                </div>
+                <div class="tab-container dn content11">
+                </div>
+            </section>
+            <section class="jianav_con">
+                
+                <a href="Index.aspx" class='' value=''> 首页
+                </a>
+                <a href="GoodsPromote.aspx" class='' > 今日特价
+                </a>
+              
+                <a href="GoodsHot.aspx" class='' > 热销商品
+                </a>
+                <a href="GoodsBest.aspx" class='' > 商品精品
+                </a>
+                <a href="GoodsNew.aspx" class='' >最新商品
+                </a>
+                  <a href="IntegralMall.aspx" class='' > 积分商城
+                </a>
+                <a href="../BBS/Forum.aspx" > 论坛
+                </a>
+            </section>
+        </div>
+    </nav>
+    </header>
+    
+    <div class=" con-wrap clearfix">
+        <h1 id="divBreadCrumb" class="breadcrumb fl">
+            您现在的位置：<a href='Index.aspx'>移动家天下</a>>美容护肤</h1>
+        <div class="con-left level-two-left">
+            
+            <div class="subnav">
+                <h2 class="title-common">
+                    美容护肤</h2>
+                <ul class="subitem clearfix">
+                    
+                            <li><a href='GoodsList.aspx?tid=1'>
+                                洁面</a></li>
+                        
+                            <li><a href='GoodsList.aspx?tid=13'>
+                                爽肤水</a></li>
+                        
+                            <li><a href='GoodsList.aspx?tid=14'>
+                                乳液</a></li>
+                        
+                            <li><a href='GoodsList.aspx?tid=15'>
+                                面霜</a></li>
+                        
+                            <li><a href='GoodsList.aspx?tid=16'>
+                                精华</a></li>
+                        
+                            <li><a href='GoodsList.aspx?tid=17'>
+                                面膜</a></li>
+                        
+                            <li><a href='GoodsList.aspx?tid=18'>
+                                精油</a></li>
+                        
+                            <li><a href='GoodsList.aspx?tid=19'>
+                                润唇膏</a></li>
+                        
+                            <li><a href='GoodsList.aspx?tid=20'>
+                                防晒</a></li>
+                        
+                            <li><a href='GoodsList.aspx?tid=21'>
+                                祛痘</a></li>
+                        
+                            <li><a href='GoodsList.aspx?tid=22'>
+                                喷雾</a></li>
+                        
+                            <li><a href='GoodsList.aspx?tid=23'>
+                                卸妆</a></li>
+                        
+                            <li><a href='GoodsList.aspx?tid=24'>
+                                护肤套装</a></li>
+                        
+                </ul>
+            </div>
+            <div class="mod hoverchange J_HoverChange mt10">
+                <h2 class="title-common">
+                    商家热卖</h2>
+                <ul>
+                    
+                            <li>
+                                <div class="picwrap  dn">
+                                    <a class="img" href='GoodsDetails.aspx?gid=30' target="_blank">
+                                        <img width="96px" height="80px" src='images/goods/good/20120814_10_04_28_m.jpg' alt='心相印三层薰衣草香型手帕纸*10包' />
+                                        <span class="price">&yen;10.00
+                                        </span></a><span class="text"><a target="_blank" href="#">
+                                            心相印三层薰衣草香型手帕纸*10包
+                                        </a>
+                                            <br />
+                                            
+                                        </span>
+                                </div>
+                                <div class="textwrap">
+                                    心相印三层薰衣草香型手帕纸*10包
+                                </div>
+                            </li>
+                        
+                            <li>
+                                <div class="picwrap  dn">
+                                    <a class="img" href='GoodsDetails.aspx?gid=33' target="_blank">
+                                        <img width="96px" height="80px" src='images/goods/good/20120814_10_09_55_m.jpg' alt='午餐盒' />
+                                        <span class="price">&yen;10.00
+                                        </span></a><span class="text"><a target="_blank" href="#">
+                                            午餐盒
+                                        </a>
+                                            <br />
+                                            
+                                        </span>
+                                </div>
+                                <div class="textwrap">
+                                    午餐盒
+                                </div>
+                            </li>
+                        
+                </ul>
+            </div>
+            <div class="mod goods-recommond mt10">
+                <h2 class="title-common">
+                    精品推荐</h2>
+                <ul>
+                    
+                            <li class="piclist"><a href="GoodsDetails.aspx?gid=26" target="_blank"
+                                class="imglink">
+                                <img src='images/goods/good/20120814_09_38_05_m.jpg' width="150px" height="150px" alt='和祥高档快餐杯' />
+                            </a>
+                                <p class="imgtext">
+                                    <a href="GoodsDetails.aspx?gid=1">
+                                        和祥高档快餐杯
+                                    </a>
+                                </p>
+                            </li>
+                        
+                            <li class="piclist"><a href="GoodsDetails.aspx?gid=51" target="_blank"
+                                class="imglink">
+                                <img src='images/goods/good/20120814_10_55_55_m.jpg' width="150px" height="150px" alt='星之恋手帕纸' />
+                            </a>
+                                <p class="imgtext">
+                                    <a href="GoodsDetails.aspx?gid=1">
+                                        星之恋手帕纸
+                                    </a>
+                                </p>
+                            </li>
+                        
+                            <li class="piclist"><a href="GoodsDetails.aspx?gid=349" target="_blank"
+                                class="imglink">
+                                <img src='images/goods/good/20120817_03_36_22_m.jpg' width="150px" height="150px" alt='九阳DJ13B-D08D豆浆机' />
+                            </a>
+                                <p class="imgtext">
+                                    <a href="GoodsDetails.aspx?gid=1">
+                                        九阳DJ13B-D08D豆浆机
+                                    </a>
+                                </p>
+                            </li>
+                        
+                </ul>
+            </div>
+        </div>
+        <div class="con-right">
+            <div class="goods_show clearfix">
+                <div class="sortfilter J_SortFilter clearfix" id="sortfilter">
+                    <span class="search_tip">排序: </span><a class="sort  J_Sort"
+                        sorttype="0"><span>销量 </span><span class="arrow down"></span></a><a class="sort  J_Sort   "
+                            sorttype="1"><span>评分 </span><span class="arrow down"></span></a><a class="sort  J_Sort   "
+                                sorttype="2"><span>价格 </span><span class="arrow up"></span></a><a class="sort  J_Sort   "
+                                    sorttype="3"><span>上架时间 </span><span class="arrow down"></span></a>
+                </div>
+                <ul class="item clearfix">
+                    
+                </ul>
+                <div id="J_PageNation" class="pagenation fr">
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <script type="text/javascript"  src="http://yinghuo.com/??s/kissy/1.2.0/kissy-min.js,s/html5/html5.js,s/html5/respond.min.js,bishe/js/config.js"></script>
+
+
+    <script>
+    KISSY.use("list", function(S) {
+            var nHoverChange = S.all(".J_HoverChange li");
+            S.Common.hoverChange(nHoverChange);
+            S.Common.search("search.aspx?");
+            S.Common.subNav("handler/subnav.ashx", true);
+	         var promoteList = new S.List({
+	                index: 1,
+	                max: 0
+	            });
+            var item=S.all(".subitem li");
+	       	S.each(item,function(node,num){
+	       		var itemNode=S.one(node),
+	       		html=S.trim(itemNode.children().html()),
+	       		itemLen=html.length;
+	       		itemNode.css({
+	       			"width":itemLen+"em"
+	       			});
+	       	});
+        });
+
+       KISSY.use("sizzle",function(S){
+       	
+       	var item=S.all(".subitem li");
+       	S.each(item,function(node,num){
+       		var itemNode=S.one(node),
+       		html=S.trim(itemNode.children().html()),
+       		itemLen=html.length;
+       		itemNode.css({
+       			"width":itemLen+"em"
+       			});
+       	});
+       });
+    </script>
+
+
+    <div id="nav_sus" style="left: 0px;" class="close">
+        <div id="nav_sus_left">
+            <a href="../Index.aspx">移动家天下</a> <a href="../Team/TeamIndex.aspx">优团100</a> <a href="index.aspx">
+                家天下商城</a> <a href="#">包干到户</a><a href="../MobleLife/index.aspx">移动生活</a><a href="../Home/index.aspx">个人中心</a>
+        </div>
+        <a id="nav_sus_right">x</a>
+    </div>
+    
+ <footer id="footer">
+    <section class="banner">
+        <a href="" target="_blank">
+            <img src="images/image/banner-foot.png" />
+        </a>
+    </section>
+    <section class="link">
+        <ol class="clearfix">
+            <li class="item first-item">
+                <h3 class="introduction">
+                    新手入门
+                </h3>
+                <ul>
+                    <li>
+                        <a href="#" target="_blank">
+                            购物流程
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            积分说明
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="item">
+                <h3 class="delivery">
+                    配送方式
+                </h3>
+                <ul>
+                    <li>
+                        <a href="#" target="_blank">
+                            配送时间及运费
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            验货与签收
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="item">
+                <h3 class="pay">
+                    支付方式
+                </h3>
+                <ul>
+                    <li>
+                        <a href="#" target="_blank">
+                            网上支付
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            手机支付
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="item">
+                <h3 class="services-after">
+                    售后服务
+                </h3>
+                <ul>
+                    <li>
+                        <a href="#" target="_blank">
+                            退换货流程
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            退换货申请
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="item">
+                <h3 class="services-special">
+                    公司信息
+                </h3>
+                <ul>
+                    <li>
+                        <a href="#" target="_blank">
+                            移动家天下
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            蒂诺通讯
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="item">
+                <h3 class="help">
+                    帮助信息
+                </h3>
+                <ul>
+                    <li>
+                        <a href="#" target="_blank">
+                            常见问题
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            找回密码
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+    <section class="copyright">Copyright (C) 移动家天下 (2012-2016),All Rights Reserved | 河北蒂诺通讯有限公司</section>
+</footer>
+   
+    </form>
+</body>
+</html>

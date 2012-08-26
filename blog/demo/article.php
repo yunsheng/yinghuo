@@ -18,6 +18,7 @@
   
 		</section>
 		<?php include("common/foot.php");?>	
+		
 		<script>
 			KISSY.use("detail",function(S){
 				 var detail=new S.Detail("<?=$menuid?>");

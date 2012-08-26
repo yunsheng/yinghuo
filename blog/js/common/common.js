@@ -6,7 +6,7 @@ KISSY.add("common",function(S){
 	S.Common={
 		handleStr:function(str,cfg){
 			var str=str;
-			//去除前后空格
+			//鍘婚櫎鍓嶅悗绌烘牸
 			if(cfg['trim']){
 				str=S.trim(str);
 			}
@@ -25,7 +25,7 @@ KISSY.add("common",function(S){
 			return str;
 		},
 		/**
-		 * 根据数据源生成select标签
+		 * 鏍规嵁鏁版嵁婧愮敓鎴恠elect鏍囩
 		 */
 		selector:function(data){
 			

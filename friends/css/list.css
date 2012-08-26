@@ -1,0 +1,184 @@
+﻿.goods-recommond,.hoverchange,.subnav
+{
+	width:215px;
+}
+
+
+/*商品列表css*/
+
+.sortfilter 
+{
+    font-family:"宋体"; 
+    color:#707070;
+    padding:10px 0;
+    background-color:#eee;
+    height:26px;       
+ }
+.sortfilter span
+{
+    float:left;
+}
+.sortfilter .sort
+{
+    float:left;
+    display:inline;
+    height:20px;
+    line-height:20px;
+    padding:2px 20px;
+    border:1px solid #ccc;
+    margin-left:10px;
+    background-color:#fff;
+    cursor:pointer;
+    border-radius:2px;
+}
+.sortfilter .sort:hover,.sortfilter .active
+{
+    border-color:#82b6f2;
+    background-color:#fff;
+    color: #f60;
+}
+ 
+ /****排序图标****/
+.arrow         
+{
+    width:7px;
+    height:23px;
+}
+.sortfilter a .down     
+{
+    background:url("../images/image/filterbar.png") no-repeat 0 -46px;
+}
+.sortfilter .sort:hover .down ,.sortfilter .active .down  
+{
+    background:url("../images/image/filterbar.png") no-repeat 0 -69px;
+}
+.sortfilter a .up     
+{
+    background:url("../images/image/filterbar.png") no-repeat -10px -46px;
+}
+.sortfilter .sort:hover .up ,.sortfilter .active  .up 
+{
+    background:url("../images/image/filterbar.png") no-repeat -10px -69px;
+}
+
+/**********/
+.sortfilter .search_tip
+{
+    float:left; 
+    display:inline;
+    height:26px;
+    line-height:26px;
+    color:#999;
+    margin-left:20px;
+ }
+
+.goods_show  .item li
+{
+	float:left;
+	display:inline;
+	width: 179px;
+	height: 230px;
+	margin-top: 20px;
+}
+
+.goods_show .item .imglink
+{
+	width: 150px;
+	height: 150px;
+	display:block;
+	margin:0 auto;
+	border:1px solid #ededed;
+	padding:2px;
+}
+.goods_show .item .imglink:hover
+ {
+ 	border-color:#ccc;
+ }
+ .goods_show .item  .imgwrap{
+ 	border: none;
+ 	padding: 0;
+ }
+.goods_show .imgwrap .name
+{
+	margin-top: 10px;
+	height:32px;
+	line-height:16px;
+	overflow:hidden;
+	padding: 0 13px;
+	color:#4984c0;
+	text-align:center;
+}
+.goods_show .imgwrap .name a
+{
+	color:#4984c0;
+}
+.goods_show .imgwrap .name a:hover
+{
+	color:#f60;
+}
+.goods_show .imgwrap .price
+{
+    text-align:center;
+}
+.goods_show .itemline a{text-decoration: underline;font-size: 10pt;color: #0044ee;}
+.goods_classification{width:200px;float:left;}
+.goods_list{border:1px solid #f08300;}
+.goods_list h1{font-size:16px;text-align:center;color:#f08300;line-height:28px;}
+.goods_list ul{display:none;}
+.goods_list li{height:30px;border-top:1px solid #e1e0df;}
+.goods_list a{line-height:30px;padding-left:55px;}
+.pink{background-color:#fff9f2;}
+.light_blue{background-color:#f5fcff;}
+.img_side{border:1px solid #f08300;margin-top:5px;}
+
+
+/*主要内容区域*/
+.content{margin-top:1px; width:960px;margin: 0 auto;margin-bottom: 10px;}
+.content_left{width:200px;float:left;}
+/**================================================
+ * 	分类导航=======================================
+ =================================================*/
+.subnav{border:1px solid #736867;}
+.subnav .subitem{
+	padding: 5px;
+}
+.subnav .subitem li{
+	float: left;
+	display: inline;
+	padding: 2px 4px;
+	border: 1px solid #ccc;
+	height: 16px;
+	line-height: 16px;
+	margin:10px 0 0 10px;
+	color: #ccc;
+}
+.goods_hot{border:1px solid #E0E0E0; width:100%; margin-top:10px;}
+.goods_hot_head{width:100%; height:30px; background:url("../images/image/bg_side_hot.gif") no-repeat;}
+.goods_hot_head h2{ padding-left:16px;  height:22px; padding-top:8px; font-size:14px;}
+.goods_hot_list{ width:198px; border:solid 1px #E0E0E0; vertical-align:top; }
+.goods_show
+{
+	width:716px;
+	border:1px solid #7F7F7F;
+	padding:5px;
+	 }
+.goods_show_top{border:1px solid #e5b985;}
+.goods_show_bottom{ width:100%; float:left; display:inline; margin-top:5px;}
+
+/*图片商品列表*/
+.piclist{ margin-top:13px; width:100%; border-bottom:solid 1px #f4f4f4; padding-bottom:13px;}
+.piclist .imglink{ 
+   display:block;
+   margin:0 auto;
+   width:150px; 
+}
+.piclist .imgtext
+{
+    padding:0 10px;
+    text-align:center;
+}
+.piclist a{ text-decoration:none;color:#666666;}
+.piclist a:hover{text-decoration:underline; color:#cc3300;}
+.picimg { margin:5px;}
+.picimg img{ border:solid 1px #666666; border-style:dotted; padding:3px;}
+.pictitle{ margin-top:5px;margin-bottom:3px; text-align:center;}

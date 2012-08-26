@@ -2,8 +2,8 @@
 <!DOCTYPE html>
 <html>  
     <head>
-        <meta charset="gbk">
-        <title>µ«¬Ω</title>
+        <meta charset="utf-8">
+        <title>ÁôªÈôÜ</title>
         <link rel="stylesheet" href="<?=$serverhost?>/o/css/login.css">
     </head>
     
@@ -16,15 +16,15 @@
                             <p class="error">
                             </p>
                         </div>
-                        <!--µ«¬ºµƒ¥ÌŒÛ–≈œ¢Ω· ¯-->
-                        <!--±Í◊ºµ«¬ºøÚ-->
+                        <!--ÁôªÂΩïÁöÑÈîôËØØ‰ø°ÊÅØÁªìÊùü-->
+                        <!--Ê†áÂáÜÁôªÂΩïÊ°Ü-->
                         <div id="J_Static" class="static safe_login">
                            
                             <form id="J_StaticForm" action="<?=$serverhost?>/o/loginback.php"
                             method="post">
                                 <div class="field">
                                     <label for="username_1">
-                                       	 ’Àªß√˚
+                                       	 Ë¥¶Êà∑Âêç
                                     </label>
                                     <span class="ph-label">
                                        
@@ -33,7 +33,7 @@
                                 </div>
                                 <div class="field">
                                     <label id="password-label">
-                                       		 √‹°°¬Î
+                                       		 ÂØÜ„ÄÄÁ†Å
                                     </label>
                                    
                                         <input aria-labelledby="password-label" name="password" id="password_1" class="login-text" maxlength="10000" tabindex="2" type="password">
@@ -46,12 +46,12 @@
                                  <input type="hidden" name="redirect" value="<?=$_GET["redirect"]?>">
                                  <input type="hidden" name="callback" value="<?=$_GET["callback"]?>">
                                     <button type="submit" class="J_Submit" tabindex="5">
-                                      	  µ«¬º
+                                      	  ÁôªÂΩï
                                     </button>
                                </div>
                             </form>
                         </div>
-                        <!--µ«¬ºΩ≈±æ-->
+                        <!--ÁôªÂΩïËÑöÊú¨-->
                     </div>
                 </div>
             </div>

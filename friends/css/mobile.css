@@ -1,0 +1,289 @@
+/*
+ * 移动新业务
+ */
+.breadcrumb {
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    text-align: left;
+    width: 960px;
+}
+.con-wrap .business-new{
+	width: 930px;
+	height:200px;
+	border: 0;
+	margin:0 0 10px 15px;
+}
+.business-new .title{
+	border-bottom: 2px solid #bfbfbf;
+	position: relative;
+	height:40px;
+	background-position: 0 -404px;
+	background-color: #fff;
+}
+ a.more
+{
+  font-size:12px;	
+  color:#030303;
+}
+.business-new .bd{
+	width: 100%;
+	height: 159px;
+	overflow: hidden;
+	border :solid 1px #cccccc;
+	border-top:0;
+}
+.business-new .bd .item{
+	width: 290px;
+	float: left;
+	height: 149px;
+	margin-left: 25px;
+	padding-top:5px;
+}
+.business-new .bd .first{
+	margin-left: 5px;
+}
+.business-new .bd .item .img
+{
+	width:290px;
+	height:100px;
+}
+	
+.business-new .bd .item .name{
+	height: 30px;
+	line-height: 30px;
+	overflow: hidden;
+	color: #353535;
+	font-weight: bold;
+}
+.business-new .bd .item .name a{
+	color: #353535;
+}
+.business-new .bd .item .name a:hover{
+	color: #0000de;
+}
+.business-new .bd .item .time{
+	color: #828282;
+}
+/*==============================
+ * tab菜单
+ ============================*/
+.J_tabContent .actived{
+	display: block;
+}
+.J_tabContentItem{
+	display: none;
+}
+/*===============================
+ * 移动积分税换
+ ==============================*/
+.con-exchange{
+	float: left;
+	display: inline;
+	margin:50px 15px 0 15px;
+	width: 678px;	
+	height:536px;
+	_height:546px;
+	border: 1px solid #d8d8d8;
+	border-top: 0;
+	position: relative;
+}
+.con-exchange .title{
+	position: absolute;
+	height: 40px;
+	top: -50px;
+	width: 100%;
+	background
+ 	border-bottom: 2px solid #3399FF;
+ 	background-color: #fff;
+}
+.con-exchange .mod{
+	width: 678px;
+	height: 505px;
+	border: 0;
+	overflow: visible;
+}
+.con-exchange .J_tabNav{
+	height:30px;
+	line-height:30px;
+	background:url("../images/image/nav2.png") repeat-x;
+	border-top: 1px solid #d8d8d8;
+}
+.con-exchange .J_tabNav li{
+	float: left;
+	display: inline;
+	cursor: pointer;
+	width:134px;
+	height:30px;
+	line-height:30px;
+	text-align: center;
+	color: #535353;
+	position: relative;
+	border-left: 1px solid #d8d8d8;
+}
+.con-exchange .J_tabNav .firstitem{
+	width: 138px;
+	margin-left: -1px;
+}
+
+.con-exchange .J_tabNav li span{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:30px;
+}
+
+.con-exchange .J_tabNav .actived span{
+	border-top: 2px solid #FE8B19;
+	background-color: #fff;
+	font-weight: bold;
+	top: -1px;
+}
+.con-exchange .J_tabContent{
+	margin-top: -1px;
+}
+.con-exchange .J_tabContentWrap
+{
+    height:460px;
+    overflow:hidden;
+}
+/*==================================
+ * 图文浏览  样式重置
+ ================================*/
+
+.con-exchange .goods-exchange
+{
+    margin:0;
+}
+.con-exchange .goods-exchange .imgwrap {
+    height: 138px;
+    width: 128px;
+    border: 0;
+    padding: 0;
+    margin: 10px 0 0 7px;
+    text-align: center;
+}
+.con-exchange .goods-exchange .imgwrap .imglink
+{
+    border: 1px solid #E5E5E5;
+    border-radius: 3px 3px 3px 3px;
+    display: block;
+    height: 85px;
+    margin: 0 auto;
+    padding: 4px 3px;
+    width: 85px;
+}
+.con-exchange .goods-exchange .imgwrap .imglink:hover
+{
+    border-color:#f60;
+}
+.con-exchange .goods-exchange .imgwrap .name {
+	height: 18px;
+	line-height:18px;
+	overflow: hidden;
+	margin: 0;
+	
+}
+.con-exchange .goods-exchange .imgwrap .mzhi,.con-exchange .goods-exchange .imgwrap .score
+{
+    font-size:10px;
+    height:12px;
+    line-height:12px;
+}
+.errortips{
+	text-align: center;
+	padding: 4em 0;
+}
+/*=============================================
+ * 其他业务=====================================
+ ==============================================*/
+.con-business{
+	width: 235px;
+	height:588px;
+	float: left;
+	display: inline;
+	color: #404040;
+}
+.con-business .mod{
+	border-color:#d8d8d8; 
+	padding: 5px;
+	width: 223px;
+}
+.con-business .title{
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+	padding-left: 10px;
+	background: url("../images/image/nav1.png") repeat-x;
+	position: relative;
+	color: #fff;
+	font-family:SimSun;
+}
+.con-business .title .more{
+	font-size: 12px;
+	bottom:7px;
+	right:10px;
+	line-height: 12px;
+}
+.con-business .act_con .imglink{
+	display: block;
+	width: 90px;
+	height: 90px;
+	padding: 2px;
+	border: 1px solid #d2d2d2;
+	margin: 15px auto;
+}
+.con-business .mzone-recommond,.con-business .mzone-ezine{
+	height: 436px;
+	margin-bottom: 10px;
+}
+.mzone-recommond{
+	color: #222222;
+}
+.mzone-recommond .name{
+	padding-left: 10px;
+	font-size: 14px;
+	color: #316CAF;
+	font-weight:bold;
+}
+.mzone-recommond .detail{
+	padding-left: 10px;
+	text-indent: 50px;
+	height: 52px;
+	overflow: hidden;
+}
+.con-business .mzone-shortcut{
+	height: 116px;
+	
+}
+.mzone-ezine .name{
+	padding-left: 40px;
+	height: 18px;
+	line-height: 18px;
+	overflow: hidden;
+}
+.mzone-shortcut ul{
+	margin-top: 10px;
+}
+.mzone-shortcut li{
+	float: left;
+	display: inline;
+	width: 90px;
+	padding-left:10px;
+	margin-left:10px;
+	height: 24px;
+	line-height: 24px;
+}
+.mzone-shortcut li a{
+	color: #2b2b2b;
+}
+
+.con-business .mzone-recommond .more,.con-business .mzone-shortcut .more
+{
+    color:#c7c7c7;
+}

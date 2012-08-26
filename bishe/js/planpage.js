@@ -8,12 +8,10 @@ KISSY.use('grid,sizzle,common,comet,top,planhandle', function (S, Grid) {
 			sucFun(data,true);
 		};
 		var sucFun=function(data,isLoginback){
-			if(data&&data.isLogin){
 				if(isLoginback){
 					S.Common.loginBack(data);
 				}
 				obj&&S.isObject(obj)?callback.apply(obj,args):callback(args);
-			}
 		},
 		failFun=function(){
 			S.Common.userLogin(true,"LOGIN_BACK");

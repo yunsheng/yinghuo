@@ -1,7 +1,8 @@
 <?php
 	
     function decodeUriCompent($str){
-    	return iconv('UTF-8','gbk', urldecode($str));
+    	 urldecode($str);
+		 
     }
 	function curPageURL() 
 	{

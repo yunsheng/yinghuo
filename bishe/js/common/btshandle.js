@@ -73,7 +73,7 @@ KISSY.add("btshandle",function(S){
 							'</div>'+
 							'<span class="input-tip"></span>'+
 						'</div>'+
-						'<input type="button" class="{{button}} sub button" style="margin-left:245px" value="提交" />'+
+						'<input type="submit" class="{{button}} sub button" style="margin-left:245px" value="提交" />'+
 					'</form>';
 
 		},
@@ -108,8 +108,11 @@ KISSY.add("btshandle",function(S){
 			height:320,
 			content:winContent
 		});
+		self.editWin.on("show",function(e){
+			self.valid("",onsuccess,o);
+		});
 		self.editWin.show();
-		self.valid("",onsuccess,o);
+		
 	},
 	/**
 	 * 编辑记录
@@ -138,8 +141,15 @@ KISSY.add("btshandle",function(S){
 			height:320,
 			content:winContent
 		});
+		self.editWin.on("show",function(e){
+			self.valid(id,onsuccess,o);
+		});
 		self.editWin.show();
-		self.valid(id,onsuccess,o);
+		
+		self.editWin.on("hide",function(e){
+			
+		});
+		
 	},
 	/**
 	 * 删除文章
@@ -152,6 +162,7 @@ KISSY.add("btshandle",function(S){
 		 	bts.del(id,function(data){
 		 		if (data.isSuccess) {
 		 			S.Win.inform("成功删除"); 
+		 			location.reload();
 		 		} else{
 		 			S.Win.warn(data.message,"删除失败");
 		 		};
@@ -165,9 +176,10 @@ KISSY.add("btshandle",function(S){
 	 */
 	valid:function(id,onsuccess,o){
 		var self=this,
+		select=new S.AreaSelect(".J_AreaSelect"),
 		editWin=self.editWin,
 		bts=self.bts,
-		formvalid=new S.Validation("#J_AddWin",{
+		formvalid=new S.Validation("#J_ValidForm",{
 		 		list:[{
 		 			node:".J_Name",
 		 			defVal:"请输入基站名",
@@ -208,9 +220,12 @@ KISSY.add("btshandle",function(S){
 		 				rightMes:"",
 		 				errorMes:"地址不能超过50个字"
 		 			}
-		 		}]
+		 		}],
+		 		submit:function(e){
+		 			e.halt();
+		 			onsubmit(e);
+		 		}
 		 }),
-		select=new S.AreaSelect(".J_AreaSelect"),
 		nEditSubBtn=S.one(".J_EditSubBtn"),
 		nAddSubBtn=S.one(".J_AddSubBtn"),
 		nNewname=S.one(".J_Name"),
@@ -223,7 +238,6 @@ KISSY.add("btshandle",function(S){
 			if (data.isSuccess) {
 				S.Win.inform(data.message||"操作成功！");
 				onsuccess.call(o);
-				
 			}else{
 				var code=data.code,
 					mes=S.ERRORCODE[code];
@@ -241,9 +255,8 @@ KISSY.add("btshandle",function(S){
 				S.Win.warn(mes,"添加失败");
 			};
 		};
-		nEditSubBtn&&nEditSubBtn.on("click",function(e){
-			if(formvalid.valid()){
-				var id=nId.val(),
+		var onsubmit=function(e){
+				var nid=nId.val(),
 				name=nNewname.val(),
 				x=nLongtitude.val(),
 				y=nLatitude.val(),
@@ -255,27 +268,10 @@ KISSY.add("btshandle",function(S){
 					"trim":true,
 					"uri":true
 				});
-				bts.edit(id,name,x,y,prov,city,county,address,editSuccess);
-				}
-		});
-		nAddSubBtn&&nAddSubBtn.on("click",function(e){
-			if(formvalid.valid()){
-				var id=nId.val(),
-				name=nNewname.val(),
-				x=nLongtitude.val(),
-				y=nLatitude.val(),
-				area=select.getAddress(),
-				prov=area.sProv,
-				city=area.sCity,
-				county=area.sArea,
-				address=S.Common.handleStr(nAddress.val(),{
-					"trim":true,
-					"uri":true
-				});
-				bts.add(id,name,x,y,prov,city,county,address,addSuccess);
-			}
-		});
-		
+				id==""&&bts.add(nid,name,x,y,prov,city,county,address,editSuccess);
+				id!=""&&bts.edit(nid,name,x,y,prov,city,county,address,editSuccess);
+				
+		};
 	}	
 	});
 	S.BtsHandle=BtsHandle;

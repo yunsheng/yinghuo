@@ -1,0 +1,724 @@
+
+
+/*=======================================
+ * 购物车、付款部分样式				=====
+ ======================================*/
+
+.pay-step
+{
+	margin: 20px 0;
+	overflow: hidden;
+}
+
+.pay-step li
+{
+	background: url("../images/image/pay_steps_bg.gif") no-repeat scroll 100% 0 #E4E4E4;
+	color: #404040;
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+	height: 23px;
+	line-height: 23px;
+	overflow: hidden;
+	padding: 0 15px 0 0;
+	text-align: center;
+	width: 200px;
+}
+.pay-step li span, .pay-step li strong
+{
+	display: block;
+}
+.pay-step li .first
+{
+	background: url("../images/image/pay_steps_bg.gif") no-repeat scroll -12px -69px #E4E4E4;
+}
+.pay-step li.last
+{
+	background-position: 100% -138px;
+}
+.pay-step li.last-current
+{
+	background-position: 100% -138px;
+	}
+.pay-step li.current
+{
+	background-color: #FF6600;
+	color: #FFFFFF;
+}
+.pay-step li.current .first
+{
+	background-color: #FF6600;
+	background-position: -12px -92px;
+}
+.pay-step li.current-prev
+{
+	background-position: 100% -23px !important;
+}
+.pay-step li.done
+{
+	background-color: #FFE6BA;
+	background-position: 100% -46px;
+	color: #FF6600;
+}
+.pay-step li.done .first
+{
+	background-color: #FFE6BA;
+	background-position: -12px -115px;
+}
+.pay-step li.last-current
+{
+	background-color: #FF6600;
+	background-position: 100% -161px;
+	color: #FFFFFF;
+}
+
+
+.payment_search
+{
+	float: right;
+	margin-top: 30px;
+}
+
+.payment_container
+{
+	margin: 0 auto;
+	width: 960px;
+}
+
+.payment_container .selected
+{
+	box-shadow: 3px 3px 0 #F3F3F3;
+	margin-bottom:7px;
+	margin-top:5px;
+	border:1px solid #FFE580;
+}
+
+.payment_container h1
+{
+	border-bottom: 2px solid #F1F1F1;
+	margin: 20px 0;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 24px;
+}
+.fill_in_address li, .ship_method li
+{
+	line-height: 32px;
+	height: 32px;
+}
+/*配送方式*/
+.payment_container .radio
+{
+	margin-left: 20px;
+}
+
+/*========================================
+ * 收货地址===============================
+ ========================================*/
+
+#addnew
+{
+	width: 100px;
+	padding: 2px;
+	font-size: 12px;
+}
+
+.new_address ul
+{
+	width: 740px;
+	margin: 10px auto;
+}
+
+.city_input, .area_input
+{
+	width: 55px;
+	height: 20px;
+}
+
+.cart_foot
+{
+	color: Gray;
+	font-family: "微软雅黑";
+	text-align: right;
+}
+.cart_foot .money
+{
+	color: #FF5500;
+	font: bold 26px tahoma;
+}
+.cart_foot_1
+{
+	line-height: 30px;
+}
+.carback
+{
+	text-align: left;
+}
+/*支付方式*/
+.pay_method
+{
+	margin-bottom: 3.order_confirm .px;
+}
+.pay_method li
+{
+	float: left;
+	display: inline;
+	width: 200px;
+}
+/*使用代金券*/
+.pay_coupon
+{
+	margin-bottom: 3px;
+	vertical-align:middle;
+}
+.couponvalid input
+{
+width:100px;
+	}
+.couponvalid span
+{
+	color:#696969;
+}
+.pay_coupon li
+{
+line-height:40px;
+}
+/*提交订单*/
+.order_confirm
+{
+	text-align: right;
+	margin-bottom: 20px;
+}
+.btnConfirm,.btnExchange
+{
+	border: 0 none;
+	cursor: pointer;
+	margin-right: 0;
+	overflow: hidden;
+	text-indent: -99999px;
+	vertical-align: middle;
+	background: url("../images/image/suborder.png") no-repeat scroll 0 0 transparent;
+	height: 36px;
+	margin-top: 10px;
+	width: 127px;
+}
+.btnExchange
+{
+	background: url("../images/image/btn-exchange.png") no-repeat scroll 0 0 transparent;
+}
+.order-table{
+	width: 100%;
+	text-align: center;
+}
+/*================================================
+ * 表单验证样式							==========
+ =================================================*/
+.J_AreaSelect
+{
+	line-height:36px;}
+
+/*=========================================
+ * 购物车								===
+ ========================================*/
+.guide-one, .guide-two, .guide-three, .pay-one, .pay-three, .continue-to a, .state-wrap .progress-bar, .okTips s, .noTips s, .check-out, .go-top, .goods-wrap ul li .control s, .submitted-wrap .submitted-order s, .article-function .J_checkOut, .submitted-wrap .submitted-order{
+	background-image:url("../images/image/cart.gif");
+	background-repeat:no-repeat;
+}
+#site-nav-bd{
+	width:960px;
+}
+header, hgroup{
+	display:block;
+}
+.header, .list-wrap, .guide-one, .guide-two, .guide-three, .pay-one, .pay-three, .pay-two{
+	width:960px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.header{
+	margin-top:20px;
+}
+hgroup{
+	height:23px;
+	margin-top:20px;
+}
+.guide-one{
+	background-position:0 0;
+}
+.guide-two{
+	background-position:0 -23px;
+}
+.guide-three{
+	background-position:0 -46px;
+}
+.pay-one{
+	background-position:0 -69px;
+}
+.pay-two{
+	background:url("http://img03.taobaocdn.com/tps/i3/T1YFy0XltjXXXXXXXX-960-23.gif") no-repeat;
+}
+.pay-three{
+	background-position:0 -92px;
+}
+.list-wrap{
+	margin-top:40px;
+	margin-bottom:80px;
+}
+.shopping-bar{
+	width:100%;
+	height:24px;
+	border-bottom:1px solid #a0c0bc;
+}
+.shopping-bar-no{
+	width:100%;
+	height:24px;
+	border-bottom:0 none;
+}
+.shopping-bar h5{
+	font-size:14px;
+}
+.shopping-bar .continue-to{
+	float:left;
+}
+.continue-to a{
+	padding-left:18px;
+	background-position:-50px -169px;
+	color:#333;
+}
+.shopping-bar .state-wrap{
+	float:right;
+}
+.state-wrap span{
+	color:#999;
+}
+.state-wrap .progress-bar-wrap{
+	display:inline-block;
+	width:148px;
+	height:7px;
+	border:1px solid #a0c0bc;
+	padding:1px;
+	background-color:#d5e4e2;
+}
+.state-wrap .progress-bar{
+	float:left;
+	width:0;
+	height:7px;
+	background-position:0 -115px;
+	overflow:hidden;
+}
+.listBg, .addBg{
+	background-color:#ebf4f3;
+}
+.state-wrap .progress{
+	color:#666;
+	margin-left:5px;
+}
+.description-wrap{
+	width:938px;
+	height:30px;
+	border:1px solid #a0c0bc;
+	background-color:#f2f2f2;
+	line-height:30px;
+	padding-left:20px;
+	margin-bottom:10px;
+}
+.description-wrap span{
+	float:left;
+	color:#999;
+}
+.control{
+	width:53px;
+}
+.description-wrap .control input{
+	margin-right:5px;
+	*vertical-align: baseline;
+	*margin-top:-6px;
+	_margin-top:4px;
+}
+.goods-info{
+	padding-right:26px;
+}
+.w320{
+	width:320px;
+}
+.w373{
+	width:373px;
+}
+.singleBg{
+	background-color:#ebf4f3;
+}
+.tips-buy{
+	width:237px;
+}
+.price, .number, .count, .total, .tips-buy{
+	text-align:center;
+}
+.price{
+	width:150px;
+}
+.number{
+	width:88px;
+}
+.number .itleft,.number .itright{
+	 padding: 0 5px;
+	 text-decoration: none;
+	 cursor: pointer;
+}
+.count{
+	width:119px;
+}
+.total{
+	width:118px;
+}
+.other{
+	width:73px;
+	padding-right:11px;
+	text-align:right;
+}
+.project{
+	line-height:105px;
+	color:#d75617;
+	font-weight:bold;
+}
+.other span{
+	float:right;
+	position:relative;
+	width:100%;
+}
+.other a{
+	color:#057bd2;
+}
+.other a.okGoods{
+	color:#666;
+}
+.other a.okGoods:hover{
+	text-decoration: none;
+	cursor: default;
+}
+.other .addGoods{
+	padding-top:30px;
+}
+.goods-wrap{
+	width:100%;
+}
+.goods-wrap ul li{
+	border:1px solid #d5e4e2;
+	width:939px;
+	height:105px;
+	padding-left:20px;
+	margin-bottom:10px;
+}
+.goods-wrap ul .item-n{
+	background-color:#f2f2f2;
+}
+.goods-wrap ul li div{
+	float:left;
+}
+.goods-wrap ul li .price, .goods-wrap ul li .number, .goods-wrap ul li .count, .goods-wrap ul li .total, .tips-buy{
+	line-height:105px;
+}
+.goods-wrap ul li .price-o{
+	color:#d75617;
+	font-weight:bold;
+}
+.goods-wrap ul li .price-t{
+	color:#666;
+}
+.goods-wrap ul li .goods-info{
+	margin-top:15px;
+}
+.goods-wrap ul li .control input{
+	margin-top:44px;
+}
+.goods-wrap ul li .control s{
+	width:12px;
+	height:12px;
+	display:block;
+	background-position:-27px -171px;
+	margin-top:44px;
+}
+.goods-info .goods-detail{
+	overflow:hidden;
+}
+.goods-detail dt a img{
+	width:70px;
+	height:70px;
+}
+.goods-info .goods-detail dt, .goods-info .goods-detail dd{
+	float:left;
+}
+.goods-info .goods-detail dd{
+	width:225px;
+}
+.goods-info .goods-detail dt{
+	width:70px;
+	height:70px;
+	border:1px solid #cfd0d0;
+	margin-right:18px;
+}
+.goods-info .goods-detail .good-titl{
+	height:30px;
+	overflow:hidden;
+}
+.goods-info .goods-detail .good-title{
+	height:18px;
+	overflow:hidden;
+}
+.goods-info .goods-detail .good-title a{
+	color:#057bd2;
+}
+.goods-info .goods-detail .teacher{
+	color:#999;
+	height:36px;
+	overflow:hidden;
+}
+.goods-info .goods-detail .goods-time{
+	color:#666;
+}
+.addTips, .removeTips{
+	background-color:#fff8d9;
+	border:1px solid #febe8f;
+	position:absolute;
+	padding:10px;
+	text-align:center;
+}
+.addTips{
+	top:-10px;
+	right:-23px;
+}
+.removeTips{
+	top:-35px;
+	right:-23px;
+}
+.okTips, .noTips{
+	color:#666;
+}
+.noTips{
+	width:168px;
+}
+.removeTips p{
+	margin-bottom:5px;
+}
+.okTips s, .noTips s{
+	width:12px;
+	height:12px;
+	margin-right:3px;
+	display:inline-block;
+	overflow:hidden;
+}
+.okTips s{
+	background-position:0 -171px;
+}
+.noTips s{
+	background-position:-27px -171px;
+}
+.removeTips .btnWrap{
+	width:100px;
+	margin:0 auto;
+	overflow:hidden;
+}
+.removeTips a{
+	float:left;
+	width:38px;
+	height:18px;
+	line-height:18px;
+	background:url("../images/image/removetips.gif") repeat-x;
+	border:1px solid #9f9f9f;
+	text-decoration: none;
+}
+#J_sure{
+	margin:0 6px 0 10px;
+}
+.article-function{
+	width:960px;
+	position:absolute;
+}
+.article-function a{
+	cursor: pointer;
+}
+/*.article-function{
+	width:960px;
+	position:absolute;
+	top:expression(eval(documentElement.scrollTop+150));
+	z-index:999;
+}*/
+.progress .J_goodsNum{
+	color:#666;
+}
+.function-left{
+	float:left;
+	border:1px solid #a0c0bc;
+	border-right:0 none;
+	background-color:#f2f2f2;
+	width:790px;
+	height:26px;
+	padding-left:20px;
+	padding-right:24px;
+	padding-top:8px;
+}
+.function-left .control{
+	color:#999;
+	float:left;
+	margin-right:20px;
+}
+.function-left .control input{
+	margin-right:5px;
+}
+.function-left a{
+	margin-right:20px;
+	color:#057bd2;
+}
+.money-right{
+	float:right;
+}
+.money-right .price-money{
+	color:#333;
+	font-weight:bold;
+}
+.money-right .money-style{
+	color:#d75617;
+	font-weight:bold;
+	font-size:18px;
+	line-height:16px;
+}
+.article-function .J_checkOut{
+	background-position:-318px -125px;
+	cursor:not-allowed;
+}
+.article-function .check-out, .article-function .J_checkOut{
+	width:126px;
+	height:36px;
+	position:absolute;
+	right:0;
+	top:0;
+	overflow:hidden;
+}
+.article-function .check-out{
+	background-position:0 -125px;
+	cursor:pointer;
+}
+.go-top{
+	width:36px;
+	height:36px;
+	overflow:hidden;
+	background-position:-136px -125px;
+	position:absolute;
+	top:0;
+	right:-46px;
+	display:none;
+}
+.function-bar{
+	float:left;
+	border-bottom:1px dotted #ccc;
+	border-right:0 none;
+	width:960px;
+	padding-top:8px;
+}
+.tool-left{
+	float:left;
+	width:500px;
+}
+.lh{
+	line-height:50px;
+}
+.input-box{
+	float:left;
+	overflow:hidden;
+	width:500px;
+}
+.submitted-wrap{
+	width:100%;
+	padding-top:20px;
+	height:40px;
+	line-height:40px;
+}
+.submitted-wrap .continue-to{
+	float:right;
+	margin-right:30px;
+}
+.submitted-wrap .continue-to a{
+	background-position: -50px -169px;
+    color: #333333;
+}
+.submitted-wrap .submitted-order s, .submitted-wrap .submitted-order{
+	width:126px;
+	height:36px;
+	overflow:hidden;
+	background-position:-182px -125px;
+	border:0 none;
+	float:right;
+	cursor: pointer;
+}
+
+.orange {
+    color: #FF7011;
+}
+
+.mt20{
+	margin-top:20px;
+}
+.cf:before, .cf:after {
+    content:"";
+    display:table;
+}
+.cf:after {
+    clear:both;
+}
+.cf {
+    zoom:1;
+}
+.input-op label{
+	height:28px;
+	line-height:28px;
+	display:inline-block;
+}
+.hide{
+	display:none;
+}
+
+/*==================================
+支付成功提示
+=========================================*/
+.affirm-win {
+    background-color: #EEFFE2;
+    border: 1px solid #ABD792;
+    border-radius: 2px 2px 2px 2px;
+    overflow: hidden;
+    padding: 30px 40px;
+    width: 628px;
+}
+.affirm-win .bd .moneysTip {
+    background: url("../img/pay.png") no-repeat scroll 0 -371px transparent;
+    color: #333333;
+    font-size: 16px;
+    font-weight: bolder;
+    height: 36px;
+    line-height: 36px;
+    padding-left: 44px;
+}
+.affirm-win .bd .errorTip
+{
+	background-position: 0 -741px;
+	}
+.affirm-win .bd .other-info {
+    color: #666666;
+    font-size: 12px;
+    line-height: 22px;
+    padding-left: 44px;
+    text-align: left;
+    width: 100%;
+}
+.affirm-win .bd .other-info .blue {
+    color: #057BD2;
+}
+.orange {
+    color: #FF7011;
+}
+.succeed-btn {
+    background-image: url("../img/seemygoods.gif");
+    background-position: -272px -82px;
+    display: block;
+    height: 26px;
+    overflow: hidden;
+    width: 140px;
+}

@@ -1,11 +1,11 @@
 
-<!--ÎÄÕÂÏêÇé-->
+<!--æ–‡ç« è¯¦æƒ…-->
  <article class="article article_min">
  	<aside class="J_operate operate operate2">			
 		<a class="J_Trigger trigger"></a>
 		<div class="con">
-			<a class="J_Edit  button " pageid="<?=$id;?>">ÐÞ¸Ä</a>
-			<a class="J_Del  button " pageid="<?=$id;?>">É¾³ý</a>
+			<a class="J_Edit  button " pageid="<?=$articleItem['id'];?>">ä¿®æ”¹</a>
+			<a class="J_Del  button " pageid="<?=$articleItem['id'];?>">åˆ é™¤</a>
 			</div>
 	</aside>
  	<header class="hd">
@@ -27,4 +27,4 @@
  	</section>
  	 
  </article>
- <!-- ÎÄÕÂÏêÇé-->
+ <!-- æ–‡ç« è¯¦æƒ…-->

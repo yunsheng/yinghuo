@@ -8,7 +8,7 @@
 		die('Could not connect: ' . mysql_error());
 	}
 	mysql_select_db("dongzhu", $con);
-	mysql_query("set names utf-8");
+	mysql_query("set names utf8");
 	return $con;
 }
 function conn_query($sql){

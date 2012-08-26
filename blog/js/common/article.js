@@ -3,9 +3,9 @@
  */
 KISSY.add("article",function(S){
 	/**
-	 * ÎÄÕÂ
+	 * æ–‡ç« 
 	 * @class S.Article
-	 * @param url ÎÄÕÂajax´¦ÀíÇëÇóµØÖ·
+	 * @param url æ–‡ç« ajaxå¤„ç†è¯·æ±‚åœ°å€
 	 */
 	function Article(){
 		this._init.apply(this, arguments);
@@ -21,13 +21,13 @@ KISSY.add("article",function(S){
 			}
 		},
 		/**
-		 * Ìí¼ÓÎÄÕÂ
+		 * æ·»åŠ æ–‡ç« 
 		 * @memberof S.Article
-		 * @param title ÎÄÕÂ±êÌâ
-		 * @param intro ÎÄÕÂ¼ò½é
-		 * @param text  ÎÄÕÂÄÚÈİ
-		 * @param category ÎÄÕÂÀàĞÍ   Ä¬ÈÏÎª0
-		 * onsuccess ³É¹¦»Øµ÷º¯Êı
+		 * @param title æ–‡ç« æ ‡é¢˜
+		 * @param intro æ–‡ç« ç®€ä»‹
+		 * @param text  æ–‡ç« å†…å®¹
+		 * @param category æ–‡ç« ç±»å‹   é»˜è®¤ä¸º0
+		 * onsuccess æˆåŠŸå›è°ƒå‡½æ•°
 		 */
 		add:function(title,intro,text,category,onsuccess){
 			var self=this,
@@ -51,11 +51,11 @@ KISSY.add("article",function(S){
 		 	});
 		},
 		/**
-		 * É¾³ıÎÄÕÂ
+		 * åˆ é™¤æ–‡ç« 
 		 * @memberof S.Article
 		 * @name del
-		 * @param id ÎÄÕÂid
-		 * @param onsuccess ³É¹¦»Øµ÷º¯Êı
+		 * @param id æ–‡ç« id
+		 * @param onsuccess æˆåŠŸå›è°ƒå‡½æ•°
 		 */
 		del:function(id,onsuccess){
 			var self=this,
@@ -74,13 +74,13 @@ KISSY.add("article",function(S){
 		 	});
 		},
 		/**
-		 * ĞŞ¸ÄÎÄÕÂ
+		 * ä¿®æ”¹æ–‡ç« 
 		 * @memberof S.Article
-		 * @param id ÎÄÕÂid
-		 * @param title ÎÄÕÂ±êÌâ
-		 * @param text  ÎÄÕÂÄÚÈİ
-		 * @param category ÎÄÕÂÀàĞÍ   Ä¬ÈÏÎª0
-		 * @param onsuccess ³É¹¦»Øµ÷º¯Êı
+		 * @param id æ–‡ç« id
+		 * @param title æ–‡ç« æ ‡é¢˜
+		 * @param text  æ–‡ç« å†…å®¹
+		 * @param category æ–‡ç« ç±»å‹   é»˜è®¤ä¸º0
+		 * @param onsuccess æˆåŠŸå›è°ƒå‡½æ•°
 		 */
 		edit:function(id,title,intro,text,category,onsuccess){
 			var self=this,

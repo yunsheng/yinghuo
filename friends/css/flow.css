@@ -1,0 +1,79 @@
+/*================================================
+ * 移动积分税换							==========
+ =================================================*/
+
+.exchange-flow .title
+{
+	font-weight: bold;
+	color: #138178;
+	line-height: 2em;
+	text-align: left;
+	height: 2em;
+	background: none;
+}
+.exchange-flow .flowcontainer
+{
+	width: 730px;
+}
+.exchange-flow .flow
+{
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 1px solid #BED6D6;
+	border-radius: 3px 3px 3px 3px;
+	float: left;
+	height: 120px;
+	margin: 0 20px 0 0;
+	position: relative;
+	width: 156px;
+}
+.exchange-flow .flowfirst
+{
+	margin-left: 0;
+}
+.exchange-flow .flow .number
+{
+	background-image: url("../images/image/exchange-step.gif");
+	background-repeat: no-repeat;
+	display: block;
+	height: 50px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 50px;
+}
+.exchange-flow .flow .number1
+{
+	background-position: 1px 1px;
+}
+.exchange-flow .flow .number2
+{
+	background-position: -53px 1px;
+}
+.exchange-flow .flow .number3
+{
+	background-position: -103px 1px;
+}
+.exchange-flow .flow .number4
+{
+	background-position: -163px 1px;
+}
+.exchange-flow .flow h3
+{
+	color: #D75617;
+	font-size: 14px;
+	font-weight: 700;
+	margin: 13px 0 0 29px;
+}
+.exchange-flow .flow p
+{
+	color: #999999;
+	padding: 2px 15px 0 20px;
+}
+.exchange-flow .flowlast
+{
+	margin: 0;
+}
+.downtable
+{
+	margin-left: 30px;
+}

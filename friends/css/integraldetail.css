@@ -1,0 +1,23 @@
+﻿.integ-name
+{
+	font-weight:bold;
+	font-size:14px;
+	}
+.integ-con
+{
+	margin-top:80px;
+	}
+.des-con
+{
+	border-top: 1px dotted #A7A7A7;
+    line-height: 20px;
+    margin: 0 30px 20px;
+    padding: 15px 0 0 10px;
+}
+.integ-title
+{
+	
+	font-size: 14px;
+    margin: 0 0 15px;
+    font-weight:bold;
+}
